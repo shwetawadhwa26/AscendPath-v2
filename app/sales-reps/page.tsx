@@ -5,7 +5,7 @@ import ApplySalesReps from "@/components/ApplyForms/ApplySalesReps";
 import TestimonialsMarquee from "@/components/Testimonials/TestimonialsMarquee";
 import { TestimonialsV3 } from "@/components/Testimonials/TestimonialsV3";
 import prisma from "@/lib/prisma";
-import type { Testimonial } from "@prisma/client";
+// import type { Testimonial } from "@prisma/client";
 import { VSLProvider } from "@/contexts/VSLContext";
 import SalesFAQ from "@/components/FAQs/SalesRepsFAQs";
 
@@ -15,8 +15,8 @@ export default async function SalesReps() {
 		orderBy: { createdAt: "desc" },
 	});
 
-	const textReviews = allTestimonials.filter((t: Testimonial) => t.type === "TEXT");
-	const videoReviews = allTestimonials.filter((t: Testimonial) => t.type === "VIDEO");
+const textReviews = allTestimonials.filter((t: any) => t.type === "TEXT");
+const videoReviews = allTestimonials.filter((t: any) => t.type === "VIDEO");
 
 	return (
 		<div className="bg-bone min-h-screen font-sans relative pb-20 sm:pb-0 selection:bg-clay selection:text-bone">
