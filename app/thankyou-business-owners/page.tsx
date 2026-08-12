@@ -10,8 +10,14 @@ import BusinessFAQ from "@/components/FAQs/BusinessOwnersFAQs";
 export default function ThankYouOwners() {
   // THE FRAME BUSTER: Breaks the page out of the Aura iframe
   useEffect(() => {
-    if (window.top !== window.self) {
-      window.top.location.href = window.location.href;
+    // window.top can be null; guard and handle potential cross-origin access
+    if (window.top && window.top !== window.self) {
+      try {
+        window.top.location.href = window.location.href;
+      } catch (e) {
+        // Fallback: if unable to access top (cross-origin), navigate current window
+        window.self.location.href = window.location.href;
+      }
     }
   }, []);
 

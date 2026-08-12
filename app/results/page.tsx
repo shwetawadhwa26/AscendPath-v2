@@ -20,7 +20,7 @@ export default function Results() {
 				<Stats />
 
 				{/* Testimonials Section */}
-				<TestimonialsV3 />
+				{/* <TestimonialsV3 /> */}
 
 				{/* CTA Section */}
 				<div className="mt-32 sm:mt-40">

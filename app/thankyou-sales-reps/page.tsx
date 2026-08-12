@@ -10,7 +10,7 @@ import SalesFAQ from "@/components/FAQs/SalesRepsFAQs";
 export default function ThankYouReps() {
   // THE FRAME BUSTER: Breaks the page out of the Aura iframe
   useEffect(() => {
-    if (window.top !== window.self) {
+    if (window.top !== window.self && window.top) {
       window.top.location.href = window.location.href;
     }
   }, []);

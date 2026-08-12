@@ -9,7 +9,7 @@ import FAQ from "@/components/FAQ";
 export default function ThankYouReps() {
   // THE FRAME BUSTER: Breaks the page out of the Aura iframe
   useEffect(() => {
-    if (window.top !== window.self) {
+    if (window.top && window.top !== window.self) {
       window.top.location.href = window.location.href;
     }
   }, []);
