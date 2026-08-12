@@ -5,6 +5,7 @@ import ApplyBusinessOwners from "@/components/ApplyForms/ApplyBusinessOwners";
 import TestimonialsMarquee from "@/components/Testimonials/TestimonialsMarquee";
 import { TestimonialsV3 } from "@/components/Testimonials/TestimonialsV3";
 import prisma from "@/lib/prisma";
+import { Testimonial } from "@prisma/client";
 import { VSLProvider } from "@/contexts/VSLContext";
 import Link from "next/link";
 import BusinessOwnersFAQs from "@/components/FAQs/BusinessOwnersFAQs";
@@ -16,8 +17,8 @@ export default async function BusinessOwners() {
 		orderBy: { createdAt: "desc" },
 	});
 
-	const textReviews = allTestimonials.filter((t) => t.type === "TEXT");
-	const videoReviews = allTestimonials.filter((t) => t.type === "VIDEO");
+	const textReviews = allTestimonials.filter((t: Testimonial) => t.type === "TEXT");
+	const videoReviews = allTestimonials.filter((t: Testimonial) => t.type === "VIDEO");
 
 	return (
 		<div className="bg-bone min-h-screen font-sans relative pb-20 sm:pb-0 selection:bg-clay selection:text-bone">

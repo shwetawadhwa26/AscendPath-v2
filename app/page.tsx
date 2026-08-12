@@ -8,6 +8,7 @@ import { VSLProvider } from "@/contexts/VSLContext";
 import ApplySalesReps from "@/components/ApplyForms/ApplySalesReps";
 import TestimonialsMarquee from "@/components/Testimonials/TestimonialsMarquee";
 import prisma from "@/lib/prisma";
+import { Testimonial } from "@prisma/client";
 
 
 export default async function Home() {
@@ -15,8 +16,8 @@ export default async function Home() {
 			orderBy: { createdAt: "desc" },
 		});
 	
-		const textReviews = allTestimonials.filter(t => t.type === "TEXT");
-		const videoReviews = allTestimonials.filter(t => t.type === "VIDEO");
+	const textReviews = allTestimonials.filter((t: Testimonial) => t.type === "TEXT");
+	const videoReviews = allTestimonials.filter((t: Testimonial) => t.type === "VIDEO");
 	return (
 		<>
 			<VSLProvider>
