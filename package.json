@@ -1,0 +1,49 @@
+{
+  "name": "ascendpath-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@cloudflare/stream-react": "^1.9.3",
+    "@headlessui/react": "^2.2.9",
+    "@heroicons/react": "^2.2.0",
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
+    "framer-motion": "^12.24.11",
+    "hls.js": "^1.6.15",
+    "next": "16.1.0",
+    "nodemailer": "^9.0.3",
+    "pg": "^8.22.0",
+    "posthog-js": "^1.407.2",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-player": "^3.4.0",
+    "react-use-measure": "^2.1.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^8.0.1",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.0",
+    "prisma": "^7.8.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "ignoreScripts": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "trustedDependencies": [
+    "sharp",
+    "unrs-resolver"
+  ]
+}

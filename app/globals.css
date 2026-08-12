@@ -1,0 +1,85 @@
+/* @import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+  --breakpoint-vsl: 700px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes unmute-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(176, 96, 255, 0.7); }
+  70% { box-shadow: 0 0 0 12px rgba(176, 96, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(176, 96, 255, 0); }
+} */
+
+
+
+
+
+@import "tailwindcss";
+
+:root {
+  /* Default Light Mode: Bone background, Espresso text */
+  --background: #241C16;
+  --foreground: #EDE6D8;
+}
+
+@theme {
+  --breakpoint-vsl: 700px;
+  
+  /* The AscendPath Custom Palette */
+  --color-espresso: #241C16;
+  --color-bone: #EDE6D8;
+  --color-clay: #C84B27;
+  --color-taupe: #8A7B6B;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Default Dark Mode: Espresso background, Bone text */
+    --background: #EDE6D8;
+    --foreground: #241C16;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes unmute-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(176, 96, 255, 0.7); }
+  70% { box-shadow: 0 0 0 12px rgba(176, 96, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(176, 96, 255, 0); }
+}
