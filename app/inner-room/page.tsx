@@ -26,7 +26,7 @@ export default function ThankYouReps() {
             NOT READY FOR A CALL? START HERE
           </p>
 
-          <h1 className="text-espresso font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-balance leading-tight mb-8">
+          <h1 className="text-espresso font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-balance leading-tight mb-8">
             The placements happen <br className="hidden sm:block" />
             <span className="text-clay">inside a room. This one.</span>
           </h1>
