@@ -24,7 +24,7 @@ export default function MyStory() {
                         <p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
                             MY STORY
                         </p>
-                        <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-none text-balance mb-8">
+                        <h1 className="font-serif text-5xl sm:text-6xl md:text-6xl font-bold tracking-tight leading-none text-balance mb-8">
                             From $5.50 in the bank <br className="hidden sm:block" />
                             <span className="text-clay">to 600+ reps placed.</span>
                         </h1>

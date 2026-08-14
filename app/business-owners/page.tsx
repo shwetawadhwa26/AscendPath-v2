@@ -32,7 +32,7 @@ export default async function BusinessOwners() {
 					<p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
 						FOR BUSINESS OWNERS
 					</p>
-					<h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-espresso leading-tight text-balance">
+					<h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-espresso leading-tight text-balance">
 						Stop interviewing 40 people <br className="hidden sm:block" />
 						<span className="text-clay">to find one real rep.</span>
 					</h1>
@@ -56,7 +56,7 @@ export default async function BusinessOwners() {
 						</p>
 					</div>
 
-					<div className="mt-16 flex flex-col items-center justify-center">
+					<div className="mt-16 flex flex-col items-center text-center justify-center">
 						<a 
 							href="#audit"
 							className="bg-clay text-bone px-10 py-4 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto"

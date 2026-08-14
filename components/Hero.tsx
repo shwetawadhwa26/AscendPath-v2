@@ -18,7 +18,7 @@ export default function Hero()
             </p>
 
             {/* H-03 H1 */}
-            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-balance text-espresso leading-tight">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-balance text-espresso leading-tight">
               Owners text me when they need sales reps. <br />
               <span className="text-clay">
                 Reps text me when they need work.

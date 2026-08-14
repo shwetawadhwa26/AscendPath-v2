@@ -30,7 +30,7 @@ export default async function SalesReps() {
 					<p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
 						FOR SALES REPS
 					</p>
-					<h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-espresso leading-tight text-balance">
+					<h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-espresso leading-tight text-balance">
 						You don't need another course. <br className="hidden sm:block" />
 						<span className="text-clay">You need someone who picks up when owners call.</span>
 					</h1>
