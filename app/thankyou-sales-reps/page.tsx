@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import VSLPlayer from "@/components/VSLs/VSLPlayer";
 import { VSLProvider } from "@/contexts/VSLContext";
-import FAQ from "@/components/FAQ";
 import SalesFAQ from "@/components/FAQs/SalesRepsFAQs";
 
 export default function ThankYouReps() {
@@ -54,7 +53,7 @@ export default function ThankYouReps() {
                   Make sure to Accept the invite.
                 </strong>
 					<img
-						alt="Harry's journey from struggle to success"
+						alt=""
 						src="https://imagedelivery.net/LtFu_2qdyYBevDjSRi4ZEg/2e23ecd0-ff7c-4974-9a3d-aad9db25d400/public"
 						//className="w-full lg:w-216 h-64 lg:h-287.5 object-cover object-top rounded-xl bg-taupe/5 shadow-xl ring-1 ring-taupe/20"
 					/>
@@ -130,60 +129,3 @@ export default function ThankYouReps() {
     </div>
   );
 }
-
-// "use client";
-
-// import { useEffect } from "react";
-
-// import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
-// import VSLPlayer from "@/components/VSLs/VSLPlayer";
-// import FAQ from "@/components/FAQ";
-// import { TestimonialsV3 } from "@/components/Testimonials/TestimonialsV3";
-// import PostApplySalesReps from "@/components/ApplyForms/PostApplySalesReps";
-
-// export default function ThankYouReps() {
-
-//             // THE FRAME BUSTER: Breaks the page out of the Aura iframe
-//             useEffect(() => {
-//                 if (window.top !== window.self) {
-//                     window.top.location.href = window.location.href;
-//                 }
-//             }, []);
-
-// 	return (
-// 		<div className="transition-colors duration-300">
-// 			<Navbar />
-
-// 			<main className="pt-32 pb-16 sm:pt-40">
-// 				<div className="mx-auto max-w-8xl px-6 lg:px-8 text-center">
-// 					<h1 className="text-5xl font-semibold tracking-tight sm:text-7xl">
-// 						Application <span className="text-clay">Received</span>
-// 					</h1>
-// 					<p className="mt-8 text-lg font-medium text-taupe max-w-2xl mx-auto">
-// 						Thank you for taking the first step towards your next $5-10K/month role. Watch the video below for your exact next steps, and review our FAQs while you wait to hear back from our placement team.
-// 					</p>
-
-// 					{/* Reps Thank You Video Player */}
-// 					<div className="mt-16 mx-auto max-w-4xl">
-// 						<VSLPlayer videoType="THANKS_REP" videoId="ebbf2bb479fc72863a9fe5f6cc0ecac4" />
-// 					</div>
-
-// 					<PostApplySalesReps/>
-// 				</div>
-
-// 				{/* FAQs Section */}
-// 				<div className="mt-5">
-// 					<FAQ />
-// 				</div>
-
-// 				{/* Additional Testimonials */}
-// 				<div className="mt-8">
-// 					<TestimonialsV3 />
-// 				</div>
-// 			</main>
-
-// 			<Footer />
-// 		</div>
-// 	);
-// }

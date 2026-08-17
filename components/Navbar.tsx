@@ -31,7 +31,7 @@ export default function Navbar() {
         <header className="absolute inset-x-0 top-0 z-50 transition-colors duration-300">
             <nav
                 aria-label="Global"
-                className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-4 border-b border-espresso shadow-l rounded-b-xl bg-bone backdrop-blur-lg transition-colors duration-300">
+                className="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-2 border-b border-espresso/20 bg-bone backdrop-blur-lg transition-colors duration-300">
                 <div className="flex lg:flex-1">
                     <Link className="flex items-center gap-2 -m-1.5 p-1.5"
                         href="/"

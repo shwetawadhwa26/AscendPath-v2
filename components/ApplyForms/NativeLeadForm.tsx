@@ -37,7 +37,7 @@ export default function NativeLeadForm({ source }: { source: "REPS" | "OWNERS" }
 
   if (status === "SUCCESS") {
     return (
-      <div className="bg-bone p-8 sm:p-12 rounded-2xl shadow-xl ring-1 ring-taupe/20 text-center max-w-2xl mx-auto w-full">
+      <div className="bg-bone p-8 sm:p-12 rounded-2xl shadow-xl ring-1 ring-taupe/20 text-center max-w-7xl mx-auto w-full">
         <h3 className="text-3xl font-bold text-espresso mb-4">Application Received</h3>
         <p className="text-taupe text-lg">
           Thank you for applying. Our team will review your details and be in touch shortly.
@@ -47,7 +47,7 @@ export default function NativeLeadForm({ source }: { source: "REPS" | "OWNERS" }
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-bone p-6 sm:p-6 rounded-2xl shadow-xl ring-1 ring-taupe/20 max-w-2xl mx-auto text-left">
+    <form onSubmit={handleSubmit} className="bg-bone p-6 sm:p-6 rounded-2xl shadow-xl ring-1 ring-espresso/20 max-w-4xl mx-auto text-left">
       <div className="mb-8 text-center">
         <h3 className="text-2xl font-bold text-espresso">Direct Application</h3>
         <p className="text-taupe text-sm mt-2">Fill out the secure form below to apply instantly.</p>

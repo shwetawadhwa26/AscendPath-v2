@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   icons: {
-    icon: "https://imagedelivery.net/LtFu_2qdyYBevDjSRi4ZEg/5554ea98-3b99-4940-a904-b64673e13800/public",
-    apple: "https://imagedelivery.net/LtFu_2qdyYBevDjSRi4ZEg/5554ea98-3b99-4940-a904-b64673e13800/public",
+    icon: "https://imagedelivery.net/LtFu_2qdyYBevDjSRi4ZEg/3fcf1a87-adcc-4fcf-630f-c6f63e35cd00/public",
+    apple: "https://imagedelivery.net/LtFu_2qdyYBevDjSRi4ZEg/3fcf1a87-adcc-4fcf-630f-c6f63e35cd00/public",
   },
   metadataBase: new URL('https://theascendpath.com'),
   title: {

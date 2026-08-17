@@ -66,7 +66,7 @@ const navigation = {
         },
         {
             name: "YouTube",
-            href: "https://www.youtube.com/@harryrewires",
+            href: "https://youtube.com/@harryconnects-d6b?si=R8QIkBlBSNZ1Hs9Z",
             icon: (props: React.SVGProps<SVGSVGElement>) => (
                 <svg
                     fill="currentColor"
@@ -95,7 +95,7 @@ const navigation = {
                         y="18" 
                         fontFamily="system-ui, -apple-system, sans-serif" 
                         fontWeight="800" 
-                        fontSize="20" 
+                        fontSize="18" 
                         letterSpacing="-1"
                     >
                         skool

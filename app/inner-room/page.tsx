@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import VSLPlayer from "@/components/VSLs/VSLPlayer";
 import { VSLProvider } from "@/contexts/VSLContext";
-import FAQ from "@/components/FAQ";
 
 export default function ThankYouReps() {
   // THE FRAME BUSTER: Breaks the page out of the Aura iframe
@@ -155,50 +154,3 @@ Copy, send, watch what happens.
 
 
 
-
-
-// "use client";
-
-// import { useEffect } from "react";
-// import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
-
-// export default function NotAFit() {
-// 	// THE FRAME BUSTER: Breaks the page out of the Aura iframe
-// 	useEffect(() => {
-// 		if (window.top !== window.self) {
-// 			window.top.location.href = window.location.href;
-// 		}
-// 	}, []);
-
-// 	return (
-// 		<div className="transition-colors duration-300">
-// 			<Navbar />
-			
-// 			<main className="pt-32 pb-16 sm:pt-40 min-h-[80vh] flex flex-col justify-center">
-// 				<div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-// 					<h1 className="text-4xl font-semibold tracking-tight sm:text-6xl text-espresso">
-// 						Not quite <span className="text-clay">ready</span> yet.
-// 					</h1>
-// 					<p className="mt-6 text-lg font-medium text-taupe max-w-2xl mx-auto">
-// 						Based on your answers, our placement program isn't the right fit for you at this exact moment. However, we don't want to leave you empty-handed. Watch this free training below on how to level up your skills.
-// 					</p>
-					
-// 					{/* Properly Embedded YouTube Video */}
-// 					<div className="mt-12 mx-auto max-w-4xl aspect-video rounded-xl overflow-hidden shadow-2xl ring-1 ring-taupe/20 bg-espresso">
-// 						<iframe 
-// 							className="w-full h-full border-0"
-// 							src="https://www.youtube.com/embed/XxjQnkDdTns?si=r7kK0dKZb-Y4yP5N" 
-// 							title="Free AscendPath Training" 
-// 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-// 							referrerPolicy="strict-origin-when-cross-origin" 
-// 							allowFullScreen 
-// 						/>
-// 					</div>
-// 				</div>
-// 			</main>
- 
-// 			<Footer />
-// 		</div>
-// 	);
-// }
