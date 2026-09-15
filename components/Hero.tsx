@@ -18,7 +18,7 @@ export default function Hero()
             </p>
 
             {/* H-03 H1 */}
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-balance text-espresso leading-tight">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-balance text-espresso leading-tight">
               Owners text me when they need sales reps. <br />
               <span className="text-clay">
                 Reps text me when they need work.
@@ -26,7 +26,7 @@ export default function Hero()
             </h1>
 
             {/* H-04 Sub */}
-            <p className="mt-8 text-lg sm:text-xl text-espresso/80 max-w-2xl mx-auto text-pretty leading-relaxed">
+            <p className="mt-8 text-sm sm:text-lg text-espresso/80 max-w-2xl mx-auto text-pretty leading-relaxed">
               I'm Harry. I started out stacking shelves at Walmart with broken
               English and{" "}
               <strong className="text-espresso font-bold">$5.50</strong> in the

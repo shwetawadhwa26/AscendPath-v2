@@ -16,7 +16,7 @@ export default function MyStory() {
         <div className="bg-bone min-h-screen font-sans selection:bg-clay selection:text-espresso text-espresso">
             <Navbar />
 
-            <main className="pt-32 pb-0 sm:pt-40">
+            <main className="pt-12 pb-0 sm:pt-32">
                 
                 {/* MS-01: HERO SECTION */}
                 <header className="max-w-6xl mx-auto px-6 lg:px-8 text-center mb-16 sm:mb-20">
@@ -24,7 +24,7 @@ export default function MyStory() {
                         <p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
                             MY STORY
                         </p>
-                        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-none text-balance mb-8">
+                        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-none text-balance mb-8">
                             From $5.50 in the bank <br className="hidden sm:block" />
                             <span className="text-clay">to 600+ reps placed.</span>
                         </h1>
@@ -35,7 +35,7 @@ export default function MyStory() {
                 </header>
 
                 {/* MS-02: VIDEO */}
-                <section className="relative z-10 pb-16 sm:pb-32">
+                <section className="mt-10 sm:mt-12 relative z-10 pb-16 sm:pb-32">
                     <div className="max-w-7xl mx-auto px-6 lg:px-8">
                         <div className="rounded-[2rem] bg-espresso/5 p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10">
                             <VSLPlayer videoType="HOME" />
