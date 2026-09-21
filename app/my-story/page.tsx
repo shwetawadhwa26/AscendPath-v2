@@ -19,7 +19,7 @@ export default function MyStory() {
             <main className="pt-12 pb-0 sm:pt-32">
                 
                 {/* MS-01: HERO SECTION */}
-                <header className="max-w-6xl mx-auto px-6 lg:px-8 text-center mb-16 sm:mb-20">
+                <header className="max-w-6xl mx-auto px-6 lg:px-8 text-center mb-10 sm:mb-14">
                     <ScrollReveal>
                         <p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
                             MY STORY
@@ -35,7 +35,7 @@ export default function MyStory() {
                 </header>
 
                 {/* MS-02: VIDEO */}
-                <section className="mt-10 sm:mt-12 relative z-10 pb-16 sm:pb-32">
+                <section className="mt-6 sm:mt-8 relative z-10 pb-16 sm:pb-32">
                     <div className="max-w-7xl mx-auto px-6 lg:px-8">
                         <div className="rounded-[2rem] bg-espresso/5 p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10">
                             <VSLPlayer videoType="HOME" />

@@ -68,14 +68,17 @@ export default async function BusinessOwners() {
 						</p>
 					</div>
 
-					{/* 5. FORM & APPLICATION (business-owners_06.png) */}
-				<section id="audit" className="py-16 sm:py-16 bg-bone">
-					<div className="text-center max-w-7xl mx-auto px-6 lg:px-8">
+					
+				</section>
+
+				{/* 5. FORM & APPLICATION (business-owners_06.png) */}
+				<section id="audit" className="mt-16 sm:mt-16 bg-bone">
+					<div className="text-center max-w-7xl mx-auto px-3 lg:px-4">
 						<div className="grid lg:grid-cols-1 gap-16">
 							
 							{/* Left Column: Form Intro & DQ Note */}
 							<div>
-								<p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
+								<p className="text-sm font-bold tracking-widest text-clay uppercase mb-2">
 									BOOK YOUR OFFER AUDIT
 								</p>
 								<h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-espresso leading-tight mb-8">
@@ -87,25 +90,25 @@ export default async function BusinessOwners() {
 
 								{/* DQ Note Box */}
 								<div className="bg-espresso/5 border border-espresso/10 p-6 rounded-2xl">
-									<strong className="block text-clay text-sm uppercase tracking-widest mb-3">Honest note:</strong>
+									<strong className="block text-clay text-sm uppercase tracking-widest mb-2">Honest note:</strong>
 									<p className="text-espresso/80 text-sm font-medium leading-relaxed">
 										If you're under $20K a month or the offer isn't dialed in yet, a rep won't fix it, they'll accelerate the mess. Fix the foundation first and come back. I mean that.
 									</p>
 								</div>
 							</div>
 
-							{/* Right Column: Aura Form Component */}
-							<div className="w-full">
-								<ApplyBusinessOwners />
-							</div>
+							
 
 						</div>
 					</div>
-				</section>
+					{/* Right Column: Aura Form Component */}
+							<div className="w-full mt-4 sm:mt-8 relative z-20">
+								<ApplyBusinessOwners />
+							</div>
 				</section>
 
 				{/* 3. THE MATCH METHOD (business-owners_03.png & business-owners_04.png) */}
-				<section className="mt-24 sm:mt-24 bg-espresso text-bone py-24 sm:py-32">
+				<section className="bg-espresso text-bone py-16 sm:py-16">
 					<div className="max-w-7xl mx-auto px-6 lg:px-8">
 						
 						{/* Intro Header */}

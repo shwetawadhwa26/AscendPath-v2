@@ -8,9 +8,9 @@ export default function Hero()
 {
   return (
     <div className="transition-colors duration-300">
-      <div className="relative isolate pt-14">
+      <div className="relative isolate">
         {/* HERO SECTION (H-01 to H-06) */}
-        <section className="relative pt-24 pb-12 sm:pt-24 sm:pb-12 px-6 lg:px-8 text-center">
+        <section className="relative px-6 lg:px-8 text-center">
           <div className="relative z-10 max-w-8xl mx-auto">
             {/* H-02 Eyebrow */}
             <p className="text-sm font-bold tracking-widest text-clay uppercase mb-5">

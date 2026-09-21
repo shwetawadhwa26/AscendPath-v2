@@ -17,9 +17,12 @@ export default async function Home() {
 	const textReviews = allTestimonials.filter((t: Testimonial) => t.type === "TEXT");
 	const videoReviews = allTestimonials.filter((t: Testimonial) => t.type === "VIDEO");
 	return (
-		<>
-			<VSLProvider>
+			<div>
 				<Navbar />
+			 {/* <VSLProvider> */}
+			<main className="pt-12 pb-0 sm:pt-32">
+                
+				
 				<Hero />
 				{/* <StorySection /> */}
 				<div className="mt-20">
@@ -61,7 +64,9 @@ export default async function Home() {
 								</div>
 				<Footer />
 				{/* <VSLPlayerWrapper /> */}
-			</VSLProvider>
-		</>
+			{/* </VSLProvider> */}
+			</main>
+			</div>
+		
 	);
 }
