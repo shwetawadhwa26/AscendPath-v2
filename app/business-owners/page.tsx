@@ -32,11 +32,12 @@ export default async function BusinessOwners() {
 					<p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
 						FOR BUSINESS OWNERS
 					</p>
-					<h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-espresso leading-tight text-balance">
-						Stop interviewing 40 people <br className="hidden sm:block" />
-						<span className="text-clay">to find one real rep.</span>
+					<h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-espresso leading-tight text-balance">
+						Stop interviewing 40 people
+ <br className="hidden sm:block" />
+						<span className="text-clay">to find one rep who actually performs.</span>
 					</h1>
-					<p className="mt-8 text-sm sm:text-lg font-medium text-taupe max-w-4xl mx-auto text-pretty leading-relaxed">
+					<p className="mt-4 text-sm sm:text-lg font-medium text-taupe max-w-4xl mx-auto text-pretty leading-relaxed">
 						Tell me the role, the offer, and the OTE, and I'll send you reps I trained myself. They're in your business within <span className="text-espresso font-bold">7 to 14 days</span>, and if one doesn't perform, <span className="text-espresso font-bold">I replace them free</span>.
 					</p>
 					
@@ -44,29 +45,31 @@ export default async function BusinessOwners() {
 				</section>
 
 				{/* 2. VSL & MATCHMAKING QUOTE (business-owners_02.png) */}
-				<section className="mt-10 sm:mt-12 mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+				<section className="mt-10 sm:mt-12 mx-auto max-w-3xl relative z-10">
 					<div className="rounded-2xl bg-espresso/5 p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10">
 						<VSLProvider>                   
 							<VSLPlayer videoType="OWNERS" videoId="394919176400fe5402e5da7b2a278037" />
 						</VSLProvider>
 					</div>
+					
+					<div className="mt-8 flex flex-col items-center text-center justify-center">
+						<a 
+							href="#audit"
+							className="bg-clay text-bone text-xl px-14 py-4 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto"
+						>
+							Send Me Reps
+						</a>
+						<p className="mt-5 text-sm font-bold text-taupe max-w mx-auto text-balance">
+							Starts with a free 30-minute Offer Audit. I shortlist from 600+ placed reps and the ones I'm training now.
+						</p>
+					</div>
+
 					<div className="mt-10 text-center max-w-4xl mx-auto">
 						<p className="text-lg sm:text-xl font-medium text-espresso/80 text-pretty leading-relaxed">
 							This is matchmaking, not recruiting. Every recruitment shop sends you resumes and makes YOU do the matching. That's why your last hires flamed out. I do the opposite.
 						</p>
 					</div>
 
-					<div className="mt-16 flex flex-col items-center text-center justify-center">
-						<a 
-							href="#audit"
-							className="bg-clay text-bone text-xl px-20 py-6 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto"
-						>
-							Book In To Find Qualified Reps
-						</a>
-						<p className="mt-5 text-sm font-bold text-taupe max-w mx-auto text-balance">
-							Starts with a free 30-minute Offer Audit. I shortlist from 600+ placed reps and the ones I'm training now.
-						</p>
-					</div>
 
 					
 				</section>

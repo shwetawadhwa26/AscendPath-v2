@@ -18,7 +18,7 @@ export default function Hero()
             </p>
 
             {/* H-03 H1 */}
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-balance text-espresso leading-tight">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-balance text-espresso leading-tight">
               Owners text me when they need sales reps. <br />
               <span className="text-clay">
                 Reps text me when they need work.
@@ -26,7 +26,7 @@ export default function Hero()
             </h1>
 
             {/* H-04 Sub */}
-            <p className="mt-8 text-sm sm:text-lg text-espresso/80 max-w-2xl mx-auto text-pretty leading-relaxed">
+            <p className="mt-4 text-sm sm:text-lg text-espresso/80 max-w-2xl mx-auto text-pretty leading-relaxed">
               I'm Harry. I started out stacking shelves at Walmart with broken
               English and{" "}
               <strong className="text-espresso font-bold">$5.50</strong> in the
@@ -62,15 +62,24 @@ export default function Hero()
         {/* VIDEO (H-08) */}
         <section className="relative z-10 pt-6 sm:pt-6 pb-8 mb-8
         ">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          {/* <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="rounded-2xl bg-bone/5 p-2 ring-1 ring-bone/10 lg:p-4 shadow-2xl shadow-black/50">
               <VSLPlayer videoType="HOME" />
             </div>
-          </div>
-          <div className="max-w-3xl mx-auto mt-16 text-center">
+          </div> */}
+
+<div className="max-w-3xl mx-auto rounded-2xl bg-bone p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/50 mb-3 sm:mb-6">
+                <VSLPlayer
+                  videoType="HOME"
+                  //videoId="18ef8b4452a0efe4ba019aa02a355d6b"
+                />
+             
+            </div>
+
+          <div className="max-w-3xl mx-auto mt-6 text-center">
           {/* Short Cards with MS-10 Door Buttons */}
-                              <div className="mt-10 max-w-3xl grid sm:grid-cols-2 gap-2 flex flex-col items-center justify-center mx-auto">
-                                <div className="bg-espresso/5 border border-espresso/10 p-4 sm:p-4 rounded-3xl flex flex-col items-center text-center">
+                              <div className="mt-5 max-w-3xl grid sm:grid-cols-2 gap-2 flex flex-col items-center justify-center mx-auto">
+                                <div className="bg-espresso/5 border border-espresso/10 p-2 sm:p-2 rounded-3xl flex flex-col items-center text-center">
                                   {/* <h3 className="font-serif text-3xl font-bold text-espresso mb-6">For Reps</h3> */}
                                   <Link 
                                     href="/sales-reps"
@@ -80,7 +89,7 @@ export default function Hero()
                                   </Link>
                                 </div>
                 
-                                <div className="bg-espresso/5 border border-espresso/10 p-4 sm:p-4 rounded-3xl flex flex-col items-center text-center">
+                                <div className="bg-espresso/5 border border-espresso/10 p-2 sm:p-2 rounded-3xl flex flex-col items-center text-center">
                                   {/* <h3 className="font-serif text-3xl font-bold text-espresso mb-6">For Owners</h3> */}
                                   <Link 
                                     href="/business-owners"
@@ -92,7 +101,7 @@ export default function Hero()
                               </div>
 
             {/* H-06 Under doors */}
-            <p className="mt-6 text-sm font-medium text-espresso/60">
+            <p className="mt-4 text-sm font-medium text-espresso/60">
               Pick your door. Takes 2 minutes either way.
             </p>
             </div>

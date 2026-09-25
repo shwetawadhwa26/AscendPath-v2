@@ -24,31 +24,34 @@ export default function ThankYouOwners() {
     <div className="min-h-screen text-espresso font-sans selection:bg-clay selection:text-espresso">
       <Navbar />
 
-      <main className="pt-32 pb-24 sm:pt-48 sm:pb-8">
+      <main className="pt-12 pb-0 sm:pt-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           {/* 1. HERO SECTION */}
           <p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
             OFFER AUDIT BOOKED
           </p>
 
-          <h1 className="text-espresso font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-balance leading-tight mb-8">
+          <h1 className="text-espresso font-serif ttext-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-balance leading-tight mb-4">
             Booked. I'll come <br className="hidden sm:block" />
             <span className="text-clay">with reps in mind.</span>
           </h1>
 
-          <p className="text-espresso text-lg sm:text-xl font-medium text-espresso/80 max-w-2xl mx-auto text-pretty leading-relaxed mb-16">
+          <p className="mt-4 text-sm sm:text-lg font-medium text-espresso/80 max-w-2xl mx-auto text-pretty leading-relaxed">
             Check your email for the <span className="text-clay font-bold">confirmation</span>. Watch the video below, and
             make sure you have these three things ready for our call:
           </p>
 
           {/* 2. RESTORED VSL PLAYER */}
-          <div className="rounded-2xl bg-bone/5 p-2 ring-1 ring-bone/10 lg:p-4 shadow-2xl shadow-black/50 mb-24">
+          <div className="mt-10 sm:mt-12 mx-auto max-w-3xl relative z-10 pb-12">
+             <div className="rounded-2xl bg-espresso/5 p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10">
+
             <VSLProvider>
               <VSLPlayer
                 videoType="THANKS_OWNERS"
                 videoId="872419c84a9dfa722ea56244f574388a"
               />
             </VSLProvider>
+            </div>
           </div>
 
           {/* 3. THE CHECKLIST (Arrows instead of numbers) */}

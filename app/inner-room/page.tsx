@@ -18,19 +18,19 @@ export default function ThankYouReps() {
     <div className="bg-bone min-h-screen text-espresso font-sans selection:bg-clay selection:text-espresso">
       <Navbar />
 
-      <main className="pt-32 pb-24 sm:pt-48 sm:pb-16">
+      <main className="pt-12 pb-0 sm:pt-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           {/* 1. HERO SECTION */}
           <p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
             NOT READY FOR A CALL? START HERE
           </p>
 
-          <h1 className="text-espresso font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-balance leading-tight mb-8">
+          <h1 className="text-espresso font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-balance leading-tight mb-4">
             The placements happen <br className="hidden sm:block" />
             <span className="text-clay">inside a room. This one.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl font-medium text-espresso/80 max-w-2xl mx-auto text-pretty leading-relaxed mb-16">
+          <p className="tmt-4 text-sm sm:text-lg font-medium text-espresso/80 max-w-2xl mx-auto text-pretty leading-relaxed mb-6">
             The Inner Room is my community on Skool. Same four keys I use with placed reps,
 weekly calls with me, and real placements happening in front of you. Train until you're placeable.
 Then I place you
@@ -44,13 +44,13 @@ Then I place you
 						>
 							Join the Inner Room
 						</a>
-						<p className="mt-3 mb-10 text-sm font-bold text-taupe max-w mx-auto text-balance">
-							Join $97/month
+						<p className="mt-3 mb-4 text-sm font-bold text-taupe max-w mx-auto text-balance">
+							Join $127/month
 						</p>
 					</div>
 
           {/* 2. VSL PLAYER */}
-          <div className="rounded-2xl bg-bone/5 p-2 ring-1 ring-bone/10 lg:p-4 shadow-2xl shadow-black/50 mb-24">
+          <div className="rounded-2xl sm:mt-2 mx-auto max-w-3xl relative z-10 bg-bone/5 p-2 ring-1 ring-bone/10 lg:p-4 shadow-2xl shadow-black/50 mb-24">
             <VSLProvider>
               <VSLPlayer
                 videoType="DQ_PAGE"

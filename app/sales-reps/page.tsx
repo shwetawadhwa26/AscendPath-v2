@@ -33,16 +33,16 @@ export default async function SalesReps() {
           <p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
             FOR SALES REPS
           </p>
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-espresso leading-tight text-balance">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-espresso leading-tight text-balance">
             You don't need another course. <br className="hidden sm:block" />
             <span className="text-clay">
-              You need someone who picks up when owners call.
+              You need a job.
             </span>
           </h1>
-          <p className="mt-8 text-sm sm:text-lg font-medium text-taupe max-w-3xl mx-auto text-pretty leading-relaxed">
+          <p className="mt-4 text-sm sm:text-lg font-medium text-taupe max-w-3xl mx-auto text-pretty leading-relaxed">
             I train you until an owner wants you, then I put you in the room.
             Most reps are placed and earning inside{" "}
-            <span className="font-bold text-espresso">30 to 45 days</span>, and
+            <span className="font-bold text-espresso">14 days</span>, and
             the goal is{" "}
             <span className="font-bold text-espresso">$5K a month or more</span>
             .
@@ -51,20 +51,19 @@ export default async function SalesReps() {
           {/* VSL added */}
           <div className="mt-10 sm:mt-12 max-w-7xl mx-auto relative z-10">
             {/* VSL Player */}
-            <div className="max-w-7xl mx-auto rounded-2xl bg-bone p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/50 mb-24 sm:mb-32">
-              <VSLProvider>
+            <div className="max-w-3xl mx-auto rounded-2xl bg-bone p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/50 mb-6 sm:mb-12">
                 <VSLPlayer
                   videoType="REPS"
                   videoId="18ef8b4452a0efe4ba019aa02a355d6b"
                 />
-              </VSLProvider>
+             
             </div>
 
             {/* Short Cards with MS-10 Door Buttons */}
             <div>
               <a
                 href="#apply"
-                className="bg-clay text-bone text-xl px-20 py-6 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto"
+                className="bg-clay text-bone text-xl px-14 py-4 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto"
               >
                 Place Me
               </a>

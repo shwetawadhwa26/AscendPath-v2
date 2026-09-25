@@ -4,6 +4,7 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import VSLPlayer from "@/components/VSLs/VSLPlayer";
 import type { Metadata } from "next";
+import { VSLProvider } from "@/contexts/VSLContext";
 
 // MS-11: Meta
 export const metadata: Metadata = {
@@ -24,24 +25,30 @@ export default function MyStory() {
                         <p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
                             MY STORY
                         </p>
-                        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-none text-balance mb-8">
+                        <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-none text-balance mb-4">
                             From $5.50 in the bank <br className="hidden sm:block" />
                             <span className="text-clay">to 600+ reps placed.</span>
                         </h1>
-                        <p className="text-lg sm:text-xl font-medium text-espresso/70 max-w-3xl mx-auto text-pretty leading-relaxed">
+                        <p className="mt-4 text-sm sm:text-lg font-medium text-espresso/70 max-w-3xl mx-auto text-pretty leading-relaxed">
                             This is the long version. The short one is on the home page, and the full thing is in the video below.
                         </p>
                     </ScrollReveal>
                 </header>
 
                 {/* MS-02: VIDEO */}
-                <section className="mt-6 sm:mt-8 relative z-10 pb-16 sm:pb-32">
-                    <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                        <div className="rounded-[2rem] bg-espresso/5 p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10">
-                            <VSLPlayer videoType="HOME" />
-                        </div>
+                {/* <section className="mt-10 sm:mt-12 mx-auto max-w-3xl relative z-10">
+                    <div className="rounded-2xl bg-espresso/5 p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10">
+                        <VSLPlayer videoType="HOME" />
                     </div>
-                </section>
+                </section> */}
+
+                <section className="mt-10 sm:mt-12 mx-auto max-w-3xl relative z-10 pb-12">
+                                    <div className="rounded-2xl bg-espresso/5 p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10">
+                                        <VSLProvider>                   
+                                            <VSLPlayer videoType="HOME" />
+                                        </VSLProvider>
+                                    </div>      
+                                </section>
 
                 {/* THE STORY CHAPTERS (Premium Editorial Split-Screen UI) */}
                 <article className="max-w-7xl mx-auto px-6 lg:px-8">
