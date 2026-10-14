@@ -4,31 +4,45 @@ import { useEffect, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 
-// Define the global fbq function for TypeScript
+// Define the global fbq function for TypeScript securely
 declare global {
     interface Window {
-        fbq: (...args: unknown[]) => void;
-        _fbq: unknown;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        fbq: any;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        _fbq: any;
     }
 }
 
-function PixelEvents({ pixelId }: { pixelId: string }) {
+function PixelEvents() {
     const pathname = usePathname();
     const searchParams = useSearchParams();
 
     useEffect(() => {
-        if (typeof window !== "undefined" && window.fbq) {
+        if (typeof window !== "undefined") {
             // 1. Capture the ref from the URL if it exists
             const urlRef = searchParams.get("ref");
             if (urlRef) {
                 sessionStorage.setItem("ref", urlRef);
             }
 
-            // 2. Retrieve the active ref (either from current URL or previous storage)
-            const activeRef = urlRef || sessionStorage.getItem("ref");
+            // 2. Retrieve the active ref from storage
+            const activeRef = sessionStorage.getItem("ref");
 
-            // 3. Fire the PageView event and attach the ref parameter if it exists
-            window.fbq("track", "PageView", activeRef ? { ref_user: activeRef } : {});
+            // 3. Fire the events safely
+            if (window.fbq) {
+                // Adding a tiny delay to allow Next.js routing to settle
+                setTimeout(() => {
+                    // Fire standard PageView for Meta's baseline tracking (required by client)
+                    window.fbq("track", "PageView");
+
+                    // Fire a Custom Event strictly for the ref tracking to bypass the Pixel Helper SPA bug
+                    if (activeRef) {
+                        window.fbq("trackCustom", "Affiliate_Page_View", { ref_user: activeRef });
+                        console.log("✅ Affiliate Event Fired:", pathname, { ref_user: activeRef });
+                    }
+                }, 150);
+            }
         }
     }, [pathname, searchParams]);
 
@@ -52,14 +66,14 @@ export default function MetaPixel({ pixelId }: { pixelId: string }) {
                         s.parentNode.insertBefore(t,s)}(window, document,'script',
                         'https://connect.facebook.net/en_US/fbevents.js');
                         
-                        // Disable Meta's automatic SPA routing so it doesn't strip our custom parameters
+                        // Disable Meta's automatic SPA routing so it doesn't strip custom parameters
                         fbq('set', 'autoConfig', false, '${pixelId}');
                         fbq('init', '${pixelId}');
                     `,
                 }}
             />
             <Suspense fallback={null}>
-                <PixelEvents pixelId={pixelId} />
+                <PixelEvents />
             </Suspense>
         </>
     );
