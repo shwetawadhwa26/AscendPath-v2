@@ -13,7 +13,7 @@ export default function ApplySalesReps() {
     useEffect(() => {
         const paramsToTrack = [
             "utm_source", "utm_medium", "utm_campaign", 
-            "utm_term", "utm_content", "ref"
+            "utm_term", "utm_content", "meta_ad_id", "ref"
         ];
         
         // 1. Save params to sessionStorage only if they exist in the current URL
