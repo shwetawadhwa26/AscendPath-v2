@@ -18,11 +18,11 @@ const faqs = [
     },
     {
         question: "What if the rep doesn't work out?",
-        answer: "If they're not producing by day 60, I replace them free. No interview rounds, no autopsy, just the next match from the pool.",
+        answer: "Same free replacement, now shown as the backup to the 14-day guarantee, so the two never look like they disagree.",
     },
     {
         question: "How do you get paid?",
-        answer: "My pay is tied to the rep performing, so we're sitting on the same side of the table. The exact structure depends on the role, and we cover it on the audit.",
+        answer: "I only get paid when your rep performs.It must match or you don't pay in the headline.",
     },
     {
         question: "What niches do you place in?",

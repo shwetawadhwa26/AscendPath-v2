@@ -4,42 +4,39 @@ import InlineVSLPlayer from "./VSLs/VSLPlayer";
 import VSLPlayer from "./VSLs/VSLPlayer";
 import ScrollReveal from "./ScrollReveal";
 
-export default function Hero() 
-{
+export default function Hero() {
   return (
     <div className="transition-colors duration-300">
       <div className="relative isolate">
         {/* HERO SECTION (H-01 to H-06) */}
-        <section className="relative px-6 lg:px-8 text-center">
-          <div className="relative z-10 max-w-8xl mx-auto">
-            {/* H-02 Eyebrow */}
-            <p className="text-sm font-bold tracking-widest text-clay uppercase mb-5">
-              THE ASCEND PATH
-            </p>
+        <section className="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
+          {/* <div className="relative z-10 max-w-8xl mx-auto"> */}
+          {/* H-02 Eyebrow */}
+          <p className="text-sm font-bold tracking-widest text-clay uppercase mb-4">
+            THE ASCEND PATH
+          </p>
 
-            {/* H-03 H1 */}
-            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-balance text-espresso leading-tight">
-              Owners text me when they need sales reps. <br />
-              <span className="text-clay">
-                Reps text me when they need work.
-              </span>
-            </h1>
+          {/* H-03 H1 */}
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-espresso leading-tight text-balance">
+            Owners text me when they need sales reps. <br />
+            <span className="text-clay">Reps text me when they need work.</span>
+          </h1>
 
-            {/* H-04 Sub */}
-            <p className="mt-4 text-sm sm:text-lg text-espresso/80 max-w-2xl mx-auto text-pretty leading-relaxed">
-              I'm Harry. I started out stacking shelves at Walmart with broken
-              English and{" "}
-              <strong className="text-espresso font-bold">$5.50</strong> in the
-              bank, and by 21 I'd generated over{" "}
-              <strong className="text-espresso font-bold">$1.5 million</strong>{" "}
-              in sales. Now I train reps and place them with business owners I
-              actually know.{" "}
-              <strong className="text-espresso font-bold">800+</strong> placed
-              so far.
-            </p>
+          {/* H-04 Sub */}
+          <p className="mt-4 text-sm sm:text-lg font-medium text-taupe max-w-4xl mx-auto text-pretty leading-relaxed">
+            I'm Harry. I started out stacking shelves at Walmart with broken
+            English and{" "}
+            <strong className="text-espresso font-bold">$5.50</strong> in the
+            bank, and by 21 I'd generated over{" "}
+            <strong className="text-espresso font-bold">$1.5 million</strong> in
+            sales. Now I train reps and place them with business owners I
+            actually know.{" "}
+            <strong className="text-espresso font-bold">800+</strong> placed so
+            far.
+          </p>
 
-            {/* H-05 Doors */}
-                            {/* <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+          {/* H-05 Doors */}
+          {/* <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
                     <Link
                     href="/sales-reps"
                     className="bg-clay text-bone px-8 py-4 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 transition-all w-full sm:w-auto"
@@ -54,60 +51,56 @@ export default function Hero()
                     </Link>
                 </div> */}
 
+          {/* </div> */}
+
+          {/* VIDEO (H-08) */}
+          <div className="mt-4 sm:mt-6 max-w-7xl mx-auto relative z-10">
+            {/* <div className="max-w-7xl mx-auto px-6 lg:px-8">
+              <div className="rounded-2xl bg-bone/5 p-2 ring-1 ring-bone/10 lg:p-4 shadow-2xl shadow-black/50">
+                <VSLPlayer videoType="HOME" />
+              </div>
+            </div> */}
+
+            <div className="max-w-3xl mx-auto rounded-2xl bg-bone p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10 mb-2 sm:mb-6">
+              <VSLPlayer
+                videoType="HOME"
+                videoId="6f2da4bf40995a935365919f3d00c304"
+              />
+            </div>
+
+            <div className="max-w-3xl mx-auto mt-6 text-center">
+              {/* Short Cards with MS-10 Door Buttons */}
+              <div className="mt-5 max-w-3xl grid sm:grid-cols-2 gap-2 flex flex-col items-center justify-center mx-auto">
+                <div className="bg-espresso/5 border border-espresso/10 p-2 sm:p-2 rounded-3xl flex flex-col items-center text-center">
+                  {/* <h3 className="font-serif text-3xl font-bold text-espresso mb-6">For Reps</h3> */}
+                  <Link
+                    href="/sales-reps"
+                    className="bg-clay text-bone px-4 py-4 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 transition-all w-full mt-auto"
+                  >
+                    I'm a Rep. Place me
+                  </Link>
+                </div>
+
+                <div className="bg-espresso/5 border border-espresso/10 p-2 sm:p-2 rounded-3xl flex flex-col items-center text-center">
+                  {/* <h3 className="font-serif text-3xl font-bold text-espresso mb-6">For Owners</h3> */}
+                  <Link
+                    href="/business-owners"
+                    className="bg-espresso text-bone px-4 py-4 rounded-xl font-bold tracking-wide hover:bg-espresso/90 transition-all w-full mt-auto"
+                  >
+                    I'm Hiring. Send me Reps
+                  </Link>
+                </div>
+              </div>
+
+              {/* H-06 Under doors */}
+              <p className="mt-4 text-sm font-medium text-espresso/60">
+                Pick your door. Takes 2 minutes either way.
+              </p>
+            </div>
           </div>
         </section>
 
-        
-
-        {/* VIDEO (H-08) */}
-        <section className="relative z-10 pt-6 sm:pt-6 pb-8 mb-8
-        ">
-          {/* <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="rounded-2xl bg-bone/5 p-2 ring-1 ring-bone/10 lg:p-4 shadow-2xl shadow-black/50">
-              <VSLPlayer videoType="HOME" />
-            </div>
-          </div> */}
-
-<div className="max-w-3xl mx-auto rounded-2xl bg-bone p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/50 mb-3 sm:mb-6">
-                <VSLPlayer
-                  videoType="HOME"
-                  //videoId="18ef8b4452a0efe4ba019aa02a355d6b"
-                />
-             
-            </div>
-
-          <div className="max-w-3xl mx-auto mt-6 text-center">
-          {/* Short Cards with MS-10 Door Buttons */}
-                              <div className="mt-5 max-w-3xl grid sm:grid-cols-2 gap-2 flex flex-col items-center justify-center mx-auto">
-                                <div className="bg-espresso/5 border border-espresso/10 p-2 sm:p-2 rounded-3xl flex flex-col items-center text-center">
-                                  {/* <h3 className="font-serif text-3xl font-bold text-espresso mb-6">For Reps</h3> */}
-                                  <Link 
-                                    href="/sales-reps"
-                                    className="bg-clay text-bone px-4 py-4 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 transition-all w-full mt-auto"
-                                  >
-                                    I'm a Rep. Place me
-                                  </Link>
-                                </div>
-                
-                                <div className="bg-espresso/5 border border-espresso/10 p-2 sm:p-2 rounded-3xl flex flex-col items-center text-center">
-                                  {/* <h3 className="font-serif text-3xl font-bold text-espresso mb-6">For Owners</h3> */}
-                                  <Link 
-                                    href="/business-owners"
-                                    className="bg-espresso text-bone px-4 py-4 rounded-xl font-bold tracking-wide hover:bg-espresso/90 transition-all w-full mt-auto"
-                                  >
-                                    I'm Hiring. Send me Reps
-                                  </Link>
-                                </div>
-                              </div>
-
-            {/* H-06 Under doors */}
-            <p className="mt-4 text-sm font-medium text-espresso/60">
-              Pick your door. Takes 2 minutes either way.
-            </p>
-            </div>
-        </section>
-
-{/* PROOF STRIP (H-07) */}
+        {/* PROOF STRIP (H-07) */}
         <section className="relative z-10 border-y border-bone py-10">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x divide-bone/10">
@@ -150,8 +143,10 @@ export default function Hero()
           </div>
         </section>
 
-        
-        <section id="about" className="relative z-10 py-16 sm:py-24 bg-espresso overflow-hidden">
+        <section
+          id="about"
+          className="relative z-10 py-16 sm:py-24 bg-espresso overflow-hidden"
+        >
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             {/* Eyebrow + H2 */}
             <div className="mb-16">
@@ -165,7 +160,6 @@ export default function Hero()
 
             {/* Timeline List with Gold Dots & SCROLL ANIMATIONS */}
             <div className="relative max-w-3xl border-l border-[#B98A2F]/30 ml-3 pl-8 space-y-12">
-              
               <ScrollReveal>
                 <div className="relative">
                   <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-[#B98A2F] ring-4 ring-espresso" />
@@ -173,9 +167,9 @@ export default function Hero()
                     I landed in Canada as a teenager with broken English and no
                     contacts. My first job was stacking shelves at Walmart for
                     fifteen bucks an hour, and after that I worked nights as a
-                    security guard. One of those nights a guy pulled a knife on me,
-                    and the next morning I told my parents everything was fine,
-                    because I couldn't handle them knowing it wasn't.
+                    security guard. One of those nights a guy pulled a knife on
+                    me, and the next morning I told my parents everything was
+                    fine, because I couldn't handle them knowing it wasn't.
                   </p>
                 </div>
               </ScrollReveal>
@@ -185,10 +179,10 @@ export default function Hero()
                   <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-[#B98A2F] ring-4 ring-espresso" />
                   <p className="text-lg text-bone/80 leading-relaxed text-pretty">
                     I knew I wanted to build something one day, and everything I
-                    read said sales was the foundation. So I googled "sales jobs no
-                    experience needed" and ended up in door-to-door solar, knocking
-                    200 to 400 doors a day. Most people heard my accent and shut the
-                    door before I got through my first sentence.
+                    read said sales was the foundation. So I googled "sales jobs
+                    no experience needed" and ended up in door-to-door solar,
+                    knocking 200 to 400 doors a day. Most people heard my accent
+                    and shut the door before I got through my first sentence.
                   </p>
                 </div>
               </ScrollReveal>
@@ -197,11 +191,12 @@ export default function Hero()
                 <div className="relative">
                   <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-[#B98A2F] ring-4 ring-espresso" />
                   <p className="text-lg text-bone/80 leading-relaxed text-pretty">
-                    My first month I closed nothing, and my bank account was down to
-                    five dollars and fifty cents. My mom saw my face on a Zoom call
-                    and told me to come home, and the honest truth is the numbers
-                    said she was right. I asked her to give me one more month.
-                    That's still the most important sentence I've ever said.
+                    My first month I closed nothing, and my bank account was
+                    down to five dollars and fifty cents. My mom saw my face on
+                    a Zoom call and told me to come home, and the honest truth
+                    is the numbers said she was right. I asked her to give me
+                    one more month. That's still the most important sentence
+                    I've ever said.
                   </p>
                 </div>
               </ScrollReveal>
@@ -210,12 +205,12 @@ export default function Hero()
                 <div className="relative">
                   <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-[#B98A2F] ring-4 ring-espresso" />
                   <p className="text-lg text-bone/80 leading-relaxed text-pretty">
-                    The next month I closed five deals. By month four it was thirty,
-                    and I finished that summer as the #1 rep out of a hundred, with
-                    over $500K in solar sales. My biggest month was twelve grand,
-                    and I celebrated it alone in my apartment eating day-old rice,
-                    because nobody around me would have understood what that number
-                    meant.
+                    The next month I closed five deals. By month four it was
+                    thirty, and I finished that summer as the #1 rep out of a
+                    hundred, with over $500K in solar sales. My biggest month
+                    was twelve grand, and I celebrated it alone in my apartment
+                    eating day-old rice, because nobody around me would have
+                    understood what that number meant.
                   </p>
                 </div>
               </ScrollReveal>
@@ -224,11 +219,12 @@ export default function Hero()
                 <div className="relative">
                   <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-[#B98A2F] ring-4 ring-espresso" />
                   <p className="text-lg text-bone/80 leading-relaxed text-pretty">
-                    Then I tried to move into online sales and got humbled all over
-                    again. I recorded thousands of Looms, and half of them I deleted
-                    before sending because I heard my own accent and lost my nerve.
-                    The rejections that did come back all had the same line in them:
-                    "we're looking for native English speakers."
+                    Then I tried to move into online sales and got humbled all
+                    over again. I recorded thousands of Looms, and half of them
+                    I deleted before sending because I heard my own accent and
+                    lost my nerve. The rejections that did come back all had the
+                    same line in them: "we're looking for native English
+                    speakers."
                   </p>
                 </div>
               </ScrollReveal>
@@ -237,10 +233,10 @@ export default function Hero()
                 <div className="relative">
                   <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-[#B98A2F] ring-4 ring-espresso" />
                   <p className="text-lg text-bone/80 leading-relaxed text-pretty">
-                    Eventually I paid a mentor $3,000 I didn't really have, and he
-                    told me the thing that changed everything: stop trying to be the
-                    best applicant, because you'll always lose that game. Stop
-                    applying and start connecting.
+                    Eventually I paid a mentor $3,000 I didn't really have, and
+                    he told me the thing that changed everything: stop trying to
+                    be the best applicant, because you'll always lose that game.
+                    Stop applying and start connecting.
                   </p>
                 </div>
               </ScrollReveal>
@@ -249,11 +245,12 @@ export default function Hero()
                 <div className="relative">
                   <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-[#B98A2F] ring-4 ring-espresso" />
                   <p className="text-lg text-bone/80 leading-relaxed text-pretty">
-                    So that's what I did. No pitching, just real conversations with
-                    real business owners, every day, for months. Fifty relationships
-                    turned into a hundred, then 200+, and at some point
-                    opportunities started coming to me instead of me chasing them.
-                    By 21 I'd generated over $1.5 million in sales.
+                    So that's what I did. No pitching, just real conversations
+                    with real business owners, every day, for months. Fifty
+                    relationships turned into a hundred, then 200+, and at some
+                    point opportunities started coming to me instead of me
+                    chasing them. By 21 I'd generated over $1.5 million in
+                    sales.
                   </p>
                 </div>
               </ScrollReveal>
@@ -262,27 +259,26 @@ export default function Hero()
                 <div className="relative">
                   <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-[#B98A2F] ring-4 ring-espresso" />
                   <p className="text-lg text-bone/80 leading-relaxed text-pretty">
-                    And then owners started asking me the same question, over and
-                    over: "do you know anyone good?" That question turned into this
-                    business. I've placed over 800 reps so far, and we'll cross
-                    1,000 this year.
+                    And then owners started asking me the same question, over
+                    and over: "do you know anyone good?" That question turned
+                    into this business. I've placed over 800 reps so far, and
+                    we'll cross 1,000 this year.
                   </p>
                 </div>
               </ScrollReveal>
-
             </div>
           </div>
 
           {/* KICKER & DOORS (H-18) */}
           <section className="pt-32 pb-8 px-6 text-center">
             <ScrollReveal>
-                <div className="max-w-3xl mx-auto">
+              <div className="max-w-3xl mx-auto">
                 <p className="text-xl sm:text-2xl font-bold text-bone leading-relaxed text-pretty">
-                    I went from begging for a chance to being the guy who gives
-                    them. If you've been doing the work and nothing's clicking,
-                    you're probably not the problem. You just don't know the right
-                    people yet.
-                    <span className="text-clay">&nbsp;I do.</span>
+                  I went from begging for a chance to being the guy who gives
+                  them. If you've been doing the work and nothing's clicking,
+                  you're probably not the problem. You just don't know the right
+                  people yet.
+                  <span className="text-clay">&nbsp;I do.</span>
                 </p>
 
                 {/* <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -301,28 +297,28 @@ export default function Hero()
                 </div> */}
 
                 {/* Short Cards with MS-10 Door Buttons */}
-                              <div className="mt-5 grid sm:grid-cols-2 gap-2">
-                                <div className="bg-espresso/5 border border-espresso/10 p-4 sm:p-4 rounded-3xl flex flex-col items-center text-center">
-                                  {/* <h3 className="font-serif text-3xl font-bold text-espresso mb-6">For Reps</h3> */}
-                                  <Link 
-                                    href="/sales-reps"
-                                    className="bg-clay text-bone px-4 py-4 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 transition-all w-full mt-auto"
-                                  >
-                                    I'm a Rep. Place me
-                                  </Link>
-                                </div>
-                
-                                <div className="bg-espresso/5 border border-espresso/10 p-4 sm:p-4 rounded-3xl flex flex-col items-center text-center">
-                                  {/* <h3 className="font-serif text-3xl font-bold text-espresso mb-6">For Owners</h3> */}
-                                  <Link 
-                                    href="/business-owners"
-                                    className="bg-bone text-espresso px-4 py-4 rounded-xl font-bold tracking-wide hover:bg-bone/90 transition-all w-full mt-auto"
-                                  >
-                                    I'm Hiring. Send me Reps
-                                  </Link>
-                                </div>
-                              </div>
+                <div className="mt-5 grid sm:grid-cols-2 gap-2">
+                  <div className="bg-espresso/5 border border-espresso/10 p-4 sm:p-4 rounded-3xl flex flex-col items-center text-center">
+                    {/* <h3 className="font-serif text-3xl font-bold text-espresso mb-6">For Reps</h3> */}
+                    <Link
+                      href="/sales-reps"
+                      className="bg-clay text-bone px-4 py-4 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 transition-all w-full mt-auto"
+                    >
+                      I'm a Rep. Place me
+                    </Link>
+                  </div>
+
+                  <div className="bg-espresso/5 border border-espresso/10 p-4 sm:p-4 rounded-3xl flex flex-col items-center text-center">
+                    {/* <h3 className="font-serif text-3xl font-bold text-espresso mb-6">For Owners</h3> */}
+                    <Link
+                      href="/business-owners"
+                      className="bg-bone text-espresso px-4 py-4 rounded-xl font-bold tracking-wide hover:bg-bone/90 transition-all w-full mt-auto"
+                    >
+                      I'm Hiring. Send me Reps
+                    </Link>
+                  </div>
                 </div>
+              </div>
             </ScrollReveal>
           </section>
         </section>
@@ -336,7 +332,5 @@ export default function Hero()
 				</div> */}
       </div>
     </div>
- 
-
-)}
-
+  );
+}

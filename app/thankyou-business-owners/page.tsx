@@ -43,7 +43,7 @@ export default function ThankYouOwners() {
 
           {/* 2. RESTORED VSL PLAYER */}
           <div className="mt-10 sm:mt-12 mx-auto max-w-3xl relative z-10 pb-12">
-             <div className="rounded-2xl bg-espresso/5 p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10">
+             <div className="max-w-3xl mx-auto rounded-2xl bg-bone p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10 mb-2 sm:mb-6">
 
             <VSLProvider>
               <VSLPlayer

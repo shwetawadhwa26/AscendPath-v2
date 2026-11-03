@@ -22,15 +22,15 @@ const faqs = [
     },
     {
         question: "What do the roles pay?",
-        answer: "Setters in my network usually land between $3K and $6K a month, and closers go from $6K to $12K and beyond. The goal I hold everyone to is $5K a month or more. Your results depend on your effort and the role you take.",
+        answer: "Setters earn $3K to $6K a month and closers earn $6K to $12K+, so someone who wants $10K to $15K sees where they fit.",
     },
     {
         question: "What does it cost?",
-        answer: "We talk numbers on the call, once we both know it's a fit. What I'll say here is that staying stuck at $1,500 a month is costing you more every single month than working with me does.",
+        answer: "Same wording as the guarantee: placed in 14 days or you don't pay.",
     },
     {
         question: "What if I don't get placed?",
-        answer: "Then I keep working with you until you are, at no extra cost. That's not a refund policy, it's me staying in the fight with you. The only people this doesn't work for are the ones who stop showing up.",
+        answer: "If you do the work and you are not placed in 14 days, you don't pay.",
     },
     {
         question: "Why are you so strict about no-shows?",

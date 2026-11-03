@@ -14,302 +14,366 @@ import BusinessOwnersFAQs from "@/components/FAQs/BusinessOwnersFAQs";
 import SecondaryMetaPixel from "@/components/SecondaryMetaPixel";
 
 export default async function BusinessOwners() {
-	// Fetch all testimonials for the Business Owners page
-	const allTestimonials = await prisma.testimonial.findMany({
-		where: { category: "OWNERS" },
-		orderBy: { createdAt: "desc" },
-	});
+  // Fetch all testimonials for the Business Owners page
+  const allTestimonials = await prisma.testimonial.findMany({
+    where: { category: "OWNERS" },
+    orderBy: { createdAt: "desc" },
+  });
 
-	const textReviews = allTestimonials.filter((t: Testimonial) => t.type === "TEXT");
-	const videoReviews = allTestimonials.filter((t: Testimonial) => t.type === "VIDEO");
+  const textReviews = allTestimonials.filter(
+    (t: Testimonial) => t.type === "TEXT",
+  );
+  const videoReviews = allTestimonials.filter(
+    (t: Testimonial) => t.type === "VIDEO",
+  );
 
-	return (
-		<div className="bg-bone min-h-screen font-sans relative pb-20 sm:pb-0 selection:bg-clay selection:text-bone">
-			<Navbar />
+  return (
+    <div className="bg-bone min-h-screen font-sans relative pb-20 sm:pb-0 selection:bg-clay selection:text-bone">
+      <Navbar />
 
-{/* 2. Inject the Secondary Pixel safely */}
-            <SecondaryMetaPixel pixelId="2153489921908781" />
+      {/* 2. Inject the Secondary Pixel safely */}
+      <SecondaryMetaPixel pixelId="2153489921908781" />
 
-						<main className="pt-12 pb-0 sm:pt-32">
-				
-				{/* 1. HERO SECTION (business-owners_01.png) */}
-				<section className="mx-auto max-w-6xl px-6 lg:px-8 text-center relative z-10">
-					<p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
-						FOR BUSINESS OWNERS
-					</p>
-					<h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-espresso leading-tight text-balance">
-						Stop interviewing 40 people
- <br className="hidden sm:block" />
-						<span className="text-clay">to find one rep who actually performs.</span>
-					</h1>
-					<p className="mt-4 text-sm sm:text-lg font-medium text-taupe max-w-4xl mx-auto text-pretty leading-relaxed">
-						Tell me the role, the offer, and the OTE, and I'll send you reps I trained myself. They're in your business within <span className="text-espresso font-bold">7 to 14 days</span>, and if one doesn't perform, <span className="text-espresso font-bold">I replace them free</span>.
-					</p>
-					
-					
-				</section>
+      <main className="pt-24 pb-0 sm:pt-32">
+        {/* 1. HERO SECTION (business-owners_01.png) */}
+        <section className="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
+            <p className="text-sm font-bold tracking-widest text-clay uppercase mb-4">
+              FOR BUSINESS OWNERS
+            </p>
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-espresso leading-tight text-balance">
+              Get a closer or setter who performs in your business in 14 days,
+              <span className="text-clay"> or you don't pay.</span>
+            </h1>
+            <p className="mt-4 text-sm sm:text-lg font-medium text-taupe max-w-4xl mx-auto text-pretty leading-relaxed">
+              No more interviewing 40 people to find one that works. I match you
+              with a rep I trained myself from my{" "}
+              <span className="text-espresso font-bold">800+ placed reps</span>,
+              and if they don't perform, I replace them free.
+            </p>
 
-				{/* 2. VSL & MATCHMAKING QUOTE (business-owners_02.png) */}
-				<section className="mt-10 sm:mt-12 mx-auto max-w-3xl relative z-10">
-					<div className="rounded-2xl bg-espresso/5 p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10">
-						<VSLProvider>                   
-							<VSLPlayer videoType="OWNERS" videoId="4476a11e6b2927acfdf2bd4ac60a7c93" />
-						</VSLProvider>
-					</div>
-					
-					<div className="mt-8 flex flex-col items-center text-center justify-center">
-						<a 
-							href="#audit"
-							className="bg-clay text-bone text-xl px-14 py-4 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto"
-						>
-							Send Me Reps
-						</a>
-						<p className="mt-5 text-sm font-bold text-taupe max-w mx-auto text-balance">
-							Starts with a free 30-minute Offer Audit. I shortlist from 800+ placed reps and the ones I'm training now.
-						</p>
-					</div>
+          {/* </section> */}
 
-					<div className="mt-10 text-center max-w-4xl mx-auto">
-						<p className="text-lg sm:text-xl font-medium text-espresso/80 text-pretty leading-relaxed">
-							This is matchmaking, not recruiting. Every recruitment shop sends you resumes and makes YOU do the matching. That's why your last hires flamed out. I do the opposite.
-						</p>
-					</div>
+          {/* 2. VSL & MATCHMAKING QUOTE (business-owners_02.png) */}
+          <div className="mt-2 sm:mt-3 max-w-7xl mx-auto relative z-10">
+            {/* FIXED: Flexbox added, typo removed */}
+            <div className="flex items-center justify-center gap-2.5 mb-3">
+              <span className="bg-clay text-white font-bold text-[12px] tracking-widest px-2 py-1 rounded-md uppercase shrink-0">
+                STEP 1
+              </span>
+              <span className="text-[15px] sm:text-base font-bold text-espresso text-left">
+                Watch the short video
+              </span>
+            </div>
+            <div className="max-w-3xl mx-auto rounded-2xl bg-bone p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10 mb-2 sm:mb-6">
+              <VSLProvider>
+                <VSLPlayer
+                  videoType="OWNERS"
+                  videoId="4476a11e6b2927acfdf2bd4ac60a7c93"
+                />
+              </VSLProvider>
+            </div>
 
+            <div className="flex flex-col items-center">
+              <div className="flex items-center justify-center gap-2.5 mb-2 sm:mb-3">
+                {/* FIXED: Flexbox added, typo removed */}
+                <span className="bg-clay text-white font-bold text-[12px] tracking-widest px-2 py-1 rounded-md uppercase shrink-0">
+                  STEP 2
+                </span>
+                <span className="text-[15px] sm:text-base font-bold text-espresso text-left">
+                  Book your free Offer Audit
+                </span>
+              </div>
+              <a
+                href="#audit"
+                className="bg-clay text-bone text-sm sm:text-lg px-10 py-4 rounded-xl font-bold tracking-wide shadow-xl hover:bg-clay/90 hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto text-center"
+              >
+                Book My Free Offer Audit
+              </a>
+              <p className="mt-3 text-sm font-bold text-taupe max-w mx-auto text-balance">
+                Let's have a free 30-minute audit, and I will tell you how the
+                whole process works.
+              </p>
+            </div>
 
-					
-				</section>
+            <div className="mt-10 text-center max-w-4xl mx-auto">
+              <p className="text-lg sm:text-xl font-medium text-espresso/80 text-pretty leading-relaxed">
+                This is matchmaking, not recruiting. Every recruitment shop
+                sends you resumes and makes YOU do the matching. That's why your
+                last hires flamed out. I do the opposite.
+              </p>
+            </div>
+          </div>
+        </section>
 
-				{/* 5. FORM & APPLICATION (business-owners_06.png) */}
-				<section id="audit" className="mt-16 sm:mt-16 bg-bone">
-					<div className="text-center max-w-7xl mx-auto px-3 lg:px-4">
-						<div className="grid lg:grid-cols-1 gap-16">
-							
-							{/* Left Column: Form Intro & DQ Note */}
-							<div>
-								<p className="text-sm font-bold tracking-widest text-clay uppercase mb-2">
-									BOOK YOUR OFFER AUDIT
-								</p>
-								<h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-espresso leading-tight mb-8">
-									Tell me what you need.
-								</h2>
-								<p className="text-lg text-taupe font-medium leading-relaxed mb-12 text-pretty">
-									30 minutes. We look at your offer, your funnel, your numbers, and I tell you exactly what kind of rep moves the needle. Nothing to buy on the call. You only commit after you've met your matched rep.
-								</p>
+        {/* 5. FORM & APPLICATION (business-owners_06.png) */}
+        <section id="audit" className="mt-16 sm:mt-16 bg-bone">
+          <div className="text-center max-w-7xl mx-auto px-3 lg:px-4">
+            <div className="grid lg:grid-cols-1 gap-16">
+              {/* Left Column: Form Intro & DQ Note */}
+              <div>
+                <p className="text-sm font-bold tracking-widest text-clay uppercase mb-2">
+                  BOOK YOUR OFFER AUDIT
+                </p>
+                <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-espresso leading-tight mb-8">
+                  Tell me what you need.
+                </h2>
+                <p className="text-lg text-taupe font-medium leading-relaxed mb-12 text-pretty">
+                  30 minutes. We look at your offer, your funnel, your numbers,
+                  and I tell you exactly what kind of rep moves the needle.
+                  Nothing to buy on the call. You only commit after you've met
+                  your matched rep.
+                </p>
 
-								{/* DQ Note Box */}
-								<div className="bg-espresso/5 border border-espresso/10 p-6 rounded-2xl">
-									<strong className="block text-clay text-sm uppercase tracking-widest mb-2">Honest note:</strong>
-									<p className="text-espresso/80 text-sm font-medium leading-relaxed">
-										If you're under $20K a month or the offer isn't dialed in yet, a rep won't fix it, they'll accelerate the mess. Fix the foundation first and come back. I mean that.
-									</p>
-								</div>
-							</div>
+                {/* DQ Note Box */}
+                <div className="bg-espresso/5 border border-espresso/10 p-6 rounded-2xl">
+                  <strong className="block text-clay text-sm uppercase tracking-widest mb-2">
+                    Honest note:
+                  </strong>
+                  <p className="text-espresso/80 text-sm font-medium leading-relaxed">
+                    If you're under $20K a month or the offer isn't dialed in
+                    yet, a rep won't fix it, they'll accelerate the mess. Fix
+                    the foundation first and come back. I mean that.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Right Column: Aura Form Component */}
+          <div className="w-full mt-4 sm:mt-8 relative z-20">
+            <ApplyBusinessOwners />
+          </div>
+        </section>
 
-							
+        {/* 3. THE MATCH METHOD (business-owners_03.png & business-owners_04.png) */}
+        <section className="bg-espresso text-bone py-16 sm:py-16">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            {/* Intro Header */}
+            <div className="max-w-3xl mb-16 sm:mb-24">
+              <p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
+                THE MATCH METHOD
+              </p>
+              <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance mb-8">
+                Hiring isn't a sourcing problem.{" "}
+                <br className="hidden sm:block" />
+                <span className="text-clay italic">
+                  It's a matching problem.
+                </span>
+              </h2>
+              <p className="text-bone/70 text-lg leading-relaxed text-pretty max-w-2xl">
+                A killer closer starves on a setter offer. A great DM setter
+                bombs on agency discovery calls. Every rep you've lost was
+                almost certainly a match problem dressed up as a talent problem.
+                So the matching is the part I never outsource to you. Three
+                steps.
+              </p>
+            </div>
 
-						</div>
-					</div>
-					{/* Right Column: Aura Form Component */}
-							<div className="w-full mt-4 sm:mt-8 relative z-20">
-								<ApplyBusinessOwners />
-							</div>
-				</section>
+            {/* 3-Column Steps Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+              {/* Step 1 */}
+              <div className="bg-bone/5 border border-bone/10 p-8 rounded-3xl hover:border-clay/50 transition-colors">
+                <span className="inline-block text-clay text-sm font-bold uppercase tracking-widest mb-4">
+                  STEP 1 OFFER AUDIT
+                </span>
+                <h3 className="font-serif text-2xl font-bold text-bone mb-4">
+                  I learn your business
+                </h3>
+                <p className="text-bone/70 text-base leading-relaxed">
+                  30 minutes inside your offer, your buyer, your sales cycle,
+                  your numbers. If the spec is wrong, every rep is wrong. This
+                  is the step recruiters skip, and it's why their placements
+                  die.
+                </p>
+              </div>
 
-				{/* 3. THE MATCH METHOD (business-owners_03.png & business-owners_04.png) */}
-				<section className="bg-espresso text-bone py-16 sm:py-16">
-					<div className="max-w-7xl mx-auto px-6 lg:px-8">
-						
-						{/* Intro Header */}
-						<div className="max-w-3xl mb-16 sm:mb-24">
-							<p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
-								THE MATCH METHOD
-							</p>
-							<h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance mb-8">
-								Hiring isn't a sourcing problem. <br className="hidden sm:block" />
-								<span className="text-clay italic">It's a matching problem.</span>
-							</h2>
-							<p className="text-bone/70 text-lg leading-relaxed text-pretty max-w-2xl">
-								A killer closer starves on a setter offer. A great DM setter bombs on agency discovery calls. Every rep you've lost was almost certainly a match problem dressed up as a talent problem. So the matching is the part I never outsource to you. Three steps.
-							</p>
-						</div>
+              {/* Step 2 */}
+              <div className="bg-bone/5 border border-bone/10 p-8 rounded-3xl hover:border-clay/50 transition-colors">
+                <span className="inline-block text-clay text-sm font-bold uppercase tracking-widest mb-4">
+                  STEP 2 MATCH FROM THE POOL
+                </span>
+                <h3 className="font-serif text-2xl font-bold text-bone mb-4">
+                  I shortlist, you pick
+                </h3>
+                <p className="text-bone/70 text-base leading-relaxed">
+                  I don't post job ads. I match from a pool of reps I already
+                  know, with numbers I've already seen. That's why this takes 7
+                  to 14 days instead of a hiring quarter.
+                </p>
+              </div>
 
-						{/* 3-Column Steps Grid */}
-						<div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-							{/* Step 1 */}
-							<div className="bg-bone/5 border border-bone/10 p-8 rounded-3xl hover:border-clay/50 transition-colors">
-								<span className="inline-block text-clay text-sm font-bold uppercase tracking-widest mb-4">
-									STEP 1 OFFER AUDIT
-								</span>
-								<h3 className="font-serif text-2xl font-bold text-bone mb-4">
-									I learn your business
-								</h3>
-								<p className="text-bone/70 text-base leading-relaxed">
-									30 minutes inside your offer, your buyer, your sales cycle, your numbers. If the spec is wrong, every rep is wrong. This is the step recruiters skip, and it's why their placements die.
-								</p>
-							</div>
+              {/* Step 3 */}
+              <div className="bg-bone/5 border border-bone/10 p-8 rounded-3xl hover:border-clay/50 transition-colors">
+                <span className="inline-block text-clay text-sm font-bold uppercase tracking-widest mb-4">
+                  STEP 3 RAMP & REPLACE
+                </span>
+                <h3 className="font-serif text-2xl font-bold text-bone mb-4">
+                  I stay in the loop
+                </h3>
+                <p className="text-bone/70 text-base leading-relaxed">
+                  I track ramp with you for the first 30 days. Not producing by
+                  day 60? I replace them free. No interview rounds, no autopsy.
+                  Just the next match.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-							{/* Step 2 */}
-							<div className="bg-bone/5 border border-bone/10 p-8 rounded-3xl hover:border-clay/50 transition-colors">
-								<span className="inline-block text-clay text-sm font-bold uppercase tracking-widest mb-4">
-									STEP 2 MATCH FROM THE POOL
-								</span>
-								<h3 className="font-serif text-2xl font-bold text-bone mb-4">
-									I shortlist, you pick
-								</h3>
-								<p className="text-bone/70 text-base leading-relaxed">
-									I don't post job ads. I match from a pool of reps I already know, with numbers I've already seen. That's why this takes 7 to 14 days instead of a hiring quarter.
-								</p>
-							</div>
+        {/* 4. THE CERTAINTY STACK (business-owners_05.png) */}
+        <section className="bg-espresso text-bone pb-24 sm:pb-32 px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            {/* Gold Box with Pure Espresso Background & Left Alignment */}
+            <div className="ring-1 ring-[#B98A2F]/50 bg-espresso rounded-3xl p-8 sm:p-12 lg:p-10">
+              {/* Left Aligned Headers */}
+              <div className="text-left mb-16">
+                <p className="text-sm font-bold tracking-widest text-[#B98A2F] uppercase mb-4">
+                  WHY OWNERS COME BACK
+                </p>
+                <h3 className="font-serif text-4xl sm:text-5xl font-bold text-bone">
+                  The certainty stack.
+                </h3>
+              </div>
 
-							{/* Step 3 */}
-							<div className="bg-bone/5 border border-bone/10 p-8 rounded-3xl hover:border-clay/50 transition-colors">
-								<span className="inline-block text-clay text-sm font-bold uppercase tracking-widest mb-4">
-									STEP 3 RAMP & REPLACE
-								</span>
-								<h3 className="font-serif text-2xl font-bold text-bone mb-4">
-									I stay in the loop
-								</h3>
-								<p className="text-bone/70 text-base leading-relaxed">
-									I track ramp with you for the first 30 days. Not producing by day 60? I replace them free. No interview rounds, no autopsy. Just the next match.
-								</p>
-							</div>
-						</div>
+              {/* Single Column Vertical Stack (NOT a 2-col Grid) */}
+              <div className="flex flex-col space-y-12">
+                {/* Item 1 */}
+                <div className="flex text-left w-full gap-6">
+                  <span className="block text-[#B98A2F] font-serif text-3xl sm:text-4xl font-bold mb-3">
+                    1.
+                  </span>
 
-					</div>
-				</section>
+                  <div>
+                    <strong className="block text-bone text-xl sm:text-2xl mb-2 tracking-wide">
+                      14 days. Max.
+                    </strong>
+                    <p className="text-bone/70 text-lg leading-relaxed max-w-2xl">
+                      Not a hiring quarter. You tell me the role, I send the
+                      shortlist.
+                    </p>
+                  </div>
+                </div>
 
-{/* 4. THE CERTAINTY STACK (business-owners_05.png) */}
-				<section className="bg-espresso text-bone pb-24 sm:pb-32 px-6 lg:px-8">
-					<div className="max-w-4xl mx-auto">
-						
-						{/* Gold Box with Pure Espresso Background & Left Alignment */}
-						<div className="ring-1 ring-[#B98A2F]/50 bg-espresso rounded-3xl p-8 sm:p-12 lg:p-10">
-							
-							{/* Left Aligned Headers */}
-							<div className="text-left mb-16">
-								<p className="text-sm font-bold tracking-widest text-[#B98A2F] uppercase mb-4">
-									WHY OWNERS COME BACK
-								</p>
-								<h3 className="font-serif text-4xl sm:text-5xl font-bold text-bone">
-									The certainty stack.
-								</h3>
-							</div>
+                {/* Item 2 */}
+                <div className="flex text-left w-full gap-6">
+                  <span className="block text-[#B98A2F] font-serif text-3xl sm:text-4xl font-bold mb-3">
+                    2.
+                  </span>
 
-							{/* Single Column Vertical Stack (NOT a 2-col Grid) */}
-							<div className="flex flex-col space-y-12">
-								
-								{/* Item 1 */}
-								<div className="flex text-left w-full gap-6">
-									<span className="block text-[#B98A2F] font-serif text-3xl sm:text-4xl font-bold mb-3">1.</span>
-									
-									<div>
-										<strong className="block text-bone text-xl sm:text-2xl mb-2 tracking-wide">7 to 14 days. Max.</strong>
-										<p className="text-bone/70 text-lg leading-relaxed max-w-2xl">Not a hiring quarter. You tell me the role, I send the shortlist.</p>
-									</div>
-								</div>
+                  <div>
+                    <strong className="block text-bone text-xl sm:text-2xl mb-2 tracking-wide">
+                      I know these reps.
+                    </strong>
+                    <p className="text-bone/70 text-lg leading-relaxed max-w-2xl">
+                      I trained them. I've seen their calls, not just their
+                      resume.
+                    </p>
+                  </div>
+                </div>
 
-								{/* Item 2 */}
-								<div className="flex text-left w-full gap-6">
-									<span className="block text-[#B98A2F] font-serif text-3xl sm:text-4xl font-bold mb-3">2.</span>
-									
-									<div>
-										<strong className="block text-bone text-xl sm:text-2xl mb-2 tracking-wide">I know these reps.</strong>
-										<p className="text-bone/70 text-lg leading-relaxed max-w-2xl">I trained them. I've seen their calls, not just their resume.</p>
-									</div>
-								</div>
+                {/* Item 3 */}
+                <div className="flex text-left w-full gap-6">
+                  <span className="block text-[#B98A2F] font-serif text-3xl sm:text-4xl font-bold mb-3">
+                    3.
+                  </span>
+                  <div>
+                    <strong className="block text-bone text-xl sm:text-2xl mb-2 tracking-wide">
+                      Free replacement.
+                    </strong>
+                    <p className="text-bone/70 text-lg leading-relaxed max-w-2xl">
+                      Not producing by day 60, I send you the next match. No
+                      invoice.
+                    </p>
+                  </div>
+                </div>
 
-								{/* Item 3 */}
-								<div className="flex text-left w-full gap-6">
-									<span className="block text-[#B98A2F] font-serif text-3xl sm:text-4xl font-bold mb-3">3.</span>
-																		<div>
+                {/* Item 4 */}
+                <div className="flex text-left w-full gap-6">
+                  <span className="block text-[#B98A2F] font-serif text-3xl sm:text-4xl font-bold mb-3">
+                    4.
+                  </span>
+                  <div>
+                    <strong className="block text-bone text-xl sm:text-2xl mb-2 tracking-wide">
+                      I only win when they perform.
+                    </strong>
+                    <p className="text-bone/70 text-lg leading-relaxed max-w-2xl">
+                      My pay is tied to their results. Same side of the table as
+                      you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-									<strong className="block text-bone text-xl sm:text-2xl mb-2 tracking-wide">Free replacement.</strong>
-									<p className="text-bone/70 text-lg leading-relaxed max-w-2xl">Not producing by day 60, I send you the next match. No invoice.</p>
-								</div>
-								</div>
+            {/* Proof Line */}
+            <div className="mt-24 sm:mt-32 text-center max-w-4xl mx-auto">
+              <h4 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-clay leading-tight mb-8">
+                "Do you know anyone good?"
+              </h4>
+              <p className="text-xl font-medium text-bone/80 text-balance leading-relaxed">
+                I get that text every week. This network exists because owners
+                are done sorting through 40 applicants for one real rep.
+              </p>
+            </div>
+          </div>
+        </section>
 
-								{/* Item 4 */}
-								<div className="flex text-left w-full gap-6">
-									
-									<span className="block text-[#B98A2F] font-serif text-3xl sm:text-4xl font-bold mb-3">4.</span>
-									<div>
-									<strong className="block text-bone text-xl sm:text-2xl mb-2 tracking-wide">I only win when they perform.</strong>
-									<p className="text-bone/70 text-lg leading-relaxed max-w-2xl">My pay is tied to their results. Same side of the table as you.</p>
-																</div>
+        <section>
+          <div className="max-w-7xl pt-24 mx-auto px-6 lg:px-8">
+            {/* FAQ SECTION */}
+            <BusinessOwnersFAQs />
+          </div>
+        </section>
 
-								</div>
+        {/* 6. WALL OF RECEIPTS (Results) */}
+        <section className="py-24 bg-bone overflow-hidden border-t border-taupe/10">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 text-center">
+            <p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
+              OWNERS I WORK WITH
+            </p>
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-espresso">
+              They stopped posting job ads.
+            </h2>
+          </div>
 
-							</div>
-						</div>
+          {/* FIRST: THE MOVING TEXT MARQUEE */}
+          {textReviews.length > 0 && (
+            <div className="mb-16">
+              <TestimonialsMarquee testimonials={textReviews} />
+            </div>
+          )}
 
-						{/* Proof Line */}
-						<div className="mt-24 sm:mt-32 text-center max-w-4xl mx-auto">
-							<h4 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-clay leading-tight mb-8">
-								"Do you know anyone good?"
-							</h4>
-							<p className="text-xl font-medium text-bone/80 text-balance leading-relaxed">
-								I get that text every week. This network exists because owners are done sorting through 40 applicants for one real rep.
-							</p>
-						</div>
-					</div>
-				</section>
+          {/* SECOND: THE SCROLLING VIDEO CAROUSEL */}
+          {videoReviews.length > 0 && (
+            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+              <TestimonialsV3 testimonials={videoReviews} />
+            </div>
+          )}
 
-		<section>
-				<div className="max-w-7xl pt-24 mx-auto px-6 lg:px-8">
-									{/* FAQ SECTION */}
-								<BusinessOwnersFAQs />
-</div>
-								</section>
+          {/* EMPTY STATE FALLBACK */}
+          {allTestimonials.length === 0 && (
+            <p className="text-center text-taupe py-10">
+              No recent results uploaded yet. Add them in the Admin dashboard!
+            </p>
+          )}
+        </section>
+      </main>
 
-				
+      <Footer />
 
-				{/* 6. WALL OF RECEIPTS (Results) */}
-				<section className="py-24 bg-bone overflow-hidden border-t border-taupe/10">
-					<div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 text-center">
-						<p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
-							OWNERS I WORK WITH
-						</p>
-						<h2 className="font-serif text-4xl sm:text-5xl font-bold text-espresso">
-							They stopped posting job ads.
-						</h2>
-					</div>
-
-					{/* FIRST: THE MOVING TEXT MARQUEE */}
-					{textReviews.length > 0 && (
-						<div className="mb-16">
-							<TestimonialsMarquee testimonials={textReviews} />
-						</div>
-					)}
-
-					{/* SECOND: THE SCROLLING VIDEO CAROUSEL */}
-					{videoReviews.length > 0 && (
-						<div className="max-w-7xl mx-auto px-6 lg:px-8">
-							<TestimonialsV3 testimonials={videoReviews} />
-						</div>
-					)}
-
-					{/* EMPTY STATE FALLBACK */}
-					{allTestimonials.length === 0 && (
-						<p className="text-center text-taupe py-10">
-							No recent results uploaded yet. Add them in the Admin dashboard!
-						</p>
-					)}
-				</section>
-
-			</main>
-
-			<Footer />
-
-			{/* GLOBAL STICKY MOBILE BAR (G-06) */}
-			<div className="sm:hidden fixed bottom-0 left-0 w-full bg-bone/95 backdrop-blur-md border-t border-taupe/20 p-3 z-50 flex justify-between items-center shadow-[0_-10px_40px_rgba(43,29,20,0.1)]">
-				<span className="text-sm font-bold text-espresso">A vetted rep in 7-14 days.</span>
-				<a href="#audit" className="bg-clay text-bone px-5 py-2.5 rounded-lg font-bold text-sm tracking-wide">
-					Send me Reps
-				</a>
-			</div>
-		</div>
-	);
+      {/* GLOBAL STICKY MOBILE BAR (G-06) */}
+      <div className="sm:hidden fixed bottom-0 left-0 w-full bg-bone/95 backdrop-blur-md border-t border-taupe/20 p-3 z-50 flex justify-between items-center shadow-[0_-10px_40px_rgba(43,29,20,0.1)]">
+        <div className="flex flex-col">
+          <span className="text-[13px] font-extrabold text-espresso leading-tight">
+            A vetted rep in 14 days or you don't pay.
+          </span>
+        </div>
+        <a
+          href="#audit"
+          className="bg-clay text-bone text-center px-5 py-2.5 rounded-lg font-bold text-sm tracking-wide"
+        >
+          Book My Free Audit
+        </a>
+      </div>
+    </div>
+  );
 }
-
-
-
