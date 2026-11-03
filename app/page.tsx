@@ -23,7 +23,7 @@ export default async function Home() {
     <div className="bg-bone min-h-screen font-sans relative pb-20 sm:pb-0 selection:bg-clay selection:text-bone">
       <Navbar />
       {/* <VSLProvider> */}
-      <main className="pt-24 pb-0 sm:pt-32">
+      <main className="pt-24 pb-0 sm:pt-24">
         <Hero />
         {/* <StorySection /> */}
         <div className="mt-20">

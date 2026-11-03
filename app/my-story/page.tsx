@@ -17,7 +17,7 @@ export default function MyStory() {
         <div className="bg-bone min-h-screen font-sans selection:bg-clay selection:text-espresso text-espresso">
             <Navbar />
 
-            <main className="pt-12 pb-0 sm:pt-32">
+            <main className="pt-24 pb-0 sm:pt-24">
                 
                 {/* MS-01: HERO SECTION */}
                 <header className="max-w-6xl mx-auto px-6 lg:px-8 text-center mb-10 sm:mb-14">

@@ -26,7 +26,7 @@ export default function ThankYouReps() {
     <div className="bg-bone min-h-screen text-espresso font-sans selection:bg-clay selection:text-espresso">
       <Navbar />
 
-      <main className="pt-12 pb-0 sm:pt-32">
+      <main className="pt-24 pb-0 sm:pt-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           {/* 1. HERO SECTION */}
           <p className="text-sm font-bold tracking-widest text-clay uppercase mb-6">
