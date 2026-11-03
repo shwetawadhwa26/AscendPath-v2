@@ -9,7 +9,7 @@ import { VSLProvider } from "@/contexts/VSLContext";
 // MS-11: Meta
 export const metadata: Metadata = {
     title: "My Story | The Ascend Path",
-    description: "From $5.50 in a Canadian bank account to 600+ sales reps placed. The real story behind The Ascend Path.",
+    description: "From $5.50 in a Canadian bank account to 800+ sales reps placed. The real story behind The Ascend Path.",
 };
 
 export default function MyStory() {
@@ -27,7 +27,7 @@ export default function MyStory() {
                         </p>
                         <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-none text-balance mb-4">
                             From $5.50 in the bank <br className="hidden sm:block" />
-                            <span className="text-clay">to 600+ reps placed.</span>
+                            <span className="text-clay">to 800+ reps placed.</span>
                         </h1>
                         <p className="mt-4 text-sm sm:text-lg font-medium text-espresso/70 max-w-3xl mx-auto text-pretty leading-relaxed">
                             This is the long version. The short one is on the home page, and the full thing is in the video below.
@@ -202,7 +202,7 @@ export default function MyStory() {
                             <div className="md:col-span-7 lg:col-span-8 space-y-8 text-lg sm:text-xl text-espresso/80 font-medium leading-relaxed text-pretty pt-2">
                                 <ScrollReveal>
                                     <p className="first-letter:text-7xl first-letter:font-serif first-letter:text-clay first-letter:mr-3 first-letter:float-left first-letter:leading-none">
-                                        Somewhere along the way, owners started asking me the same question every week: do you know anyone good? That question turned into The Ascend Path. I've placed over 600 reps so far, we'll cross 1,000 this year, and the whole business still runs on the thing I learned the hard way: the gap between $1K months and $10K months isn't more training. It's knowing the right 20 people.
+                                        Somewhere along the way, owners started asking me the same question every week: do you know anyone good? That question turned into The Ascend Path. I've placed over 800 reps so far, we'll cross 1,000 this year, and the whole business still runs on the thing I learned the hard way: the gap between $1K months and $10K months isn't more training. It's knowing the right 20 people.
                                     </p>
                                 </ScrollReveal>
                             </div>

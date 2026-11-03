@@ -10,6 +10,8 @@ import { Testimonial } from "@prisma/client";
 import { VSLProvider } from "@/contexts/VSLContext";
 import Link from "next/link";
 import BusinessOwnersFAQs from "@/components/FAQs/BusinessOwnersFAQs";
+// import MetaPixel from "@/components/MetaPixel";
+import SecondaryMetaPixel from "@/components/SecondaryMetaPixel";
 
 export default async function BusinessOwners() {
 	// Fetch all testimonials for the Business Owners page
@@ -25,7 +27,10 @@ export default async function BusinessOwners() {
 		<div className="bg-bone min-h-screen font-sans relative pb-20 sm:pb-0 selection:bg-clay selection:text-bone">
 			<Navbar />
 
-			<main className="pt-12 pb-0 sm:pt-32">
+{/* 2. Inject the Secondary Pixel safely */}
+            <SecondaryMetaPixel pixelId="2153489921908781" />
+
+						<main className="pt-12 pb-0 sm:pt-32">
 				
 				{/* 1. HERO SECTION (business-owners_01.png) */}
 				<section className="mx-auto max-w-6xl px-6 lg:px-8 text-center relative z-10">
@@ -48,7 +53,7 @@ export default async function BusinessOwners() {
 				<section className="mt-10 sm:mt-12 mx-auto max-w-3xl relative z-10">
 					<div className="rounded-2xl bg-espresso/5 p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10">
 						<VSLProvider>                   
-							<VSLPlayer videoType="OWNERS" videoId="394919176400fe5402e5da7b2a278037" />
+							<VSLPlayer videoType="OWNERS" videoId="4476a11e6b2927acfdf2bd4ac60a7c93" />
 						</VSLProvider>
 					</div>
 					
@@ -60,7 +65,7 @@ export default async function BusinessOwners() {
 							Send Me Reps
 						</a>
 						<p className="mt-5 text-sm font-bold text-taupe max-w mx-auto text-balance">
-							Starts with a free 30-minute Offer Audit. I shortlist from 600+ placed reps and the ones I'm training now.
+							Starts with a free 30-minute Offer Audit. I shortlist from 800+ placed reps and the ones I'm training now.
 						</p>
 					</div>
 

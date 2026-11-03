@@ -54,7 +54,7 @@ Then I place you
             <VSLProvider>
               <VSLPlayer
                 videoType="DQ_PAGE"
-                videoId="396c4095ab0a0bbce52c1c2f525acca3"
+                videoId="a436c7490a334e8811d02aefebc64ad4"
               />
             </VSLProvider>
           </div>

@@ -34,7 +34,7 @@ export default function Hero()
               <strong className="text-espresso font-bold">$1.5 million</strong>{" "}
               in sales. Now I train reps and place them with business owners I
               actually know.{" "}
-              <strong className="text-espresso font-bold">600+</strong> placed
+              <strong className="text-espresso font-bold">800+</strong> placed
               so far.
             </p>
 
@@ -113,7 +113,7 @@ export default function Hero()
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x divide-bone/10">
               <div className="flex flex-col items-center justify-center">
                 <span className="text-3xl md:text-4xl font-serif font-bold text-espresso mb-2">
-                  600<span className="text-[#B98A2F]">+</span>
+                  800<span className="text-[#B98A2F]">+</span>
                 </span>
                 <span className="text-sm font-bold text-espresso/80 uppercase tracking-wider">
                   reps placed
@@ -264,7 +264,7 @@ export default function Hero()
                   <p className="text-lg text-bone/80 leading-relaxed text-pretty">
                     And then owners started asking me the same question, over and
                     over: "do you know anyone good?" That question turned into this
-                    business. I've placed over 600 reps so far, and we'll cross
+                    business. I've placed over 800 reps so far, and we'll cross
                     1,000 this year.
                   </p>
                 </div>

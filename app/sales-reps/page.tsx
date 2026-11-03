@@ -55,7 +55,7 @@ export default async function SalesReps() {
             <div className="max-w-3xl mx-auto rounded-2xl bg-bone p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/50 mb-6 sm:mb-12">
                 <VSLPlayer
                   videoType="REPS"
-                  videoId="18ef8b4452a0efe4ba019aa02a355d6b"
+                  videoId="ccbd43727ca9c58e33f281335f6118e6"
                 />
              
             </div>
@@ -340,7 +340,7 @@ export default async function SalesReps() {
       {/* GLOBAL STICKY MOBILE BAR (G-05) */}
       <div className="sm:hidden fixed bottom-0 left-0 w-full bg-bone/95 backdrop-blur-md border-t border-taupe/20 p-3 z-50 flex justify-between items-center shadow-[0_-10px_40px_rgba(43,29,20,0.1)]">
         <span className="text-sm font-bold text-espresso">
-          600+ reps placed. You next?
+          800+ reps placed. You next?
         </span>
         <a
           href="#apply"
