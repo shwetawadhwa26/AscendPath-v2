@@ -29,12 +29,12 @@ export default async function BusinessOwners() {
 
   return (
     <div className="bg-bone min-h-screen font-sans relative pb-20 sm:pb-0 selection:bg-clay selection:text-bone">
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* 2. Inject the Secondary Pixel safely */}
       <SecondaryMetaPixel pixelId="2153489921908781" />
 
-      <main className="pt-24 pb-0 sm:pt-24">
+      <main className="pt-24 pb-0 sm:pt-16">
         {/* 1. HERO SECTION (business-owners_01.png) */}
         <section className="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
             <p className="text-sm font-bold tracking-widest text-clay uppercase mb-4">
@@ -54,7 +54,7 @@ export default async function BusinessOwners() {
           {/* </section> */}
 
           {/* 2. VSL & MATCHMAKING QUOTE (business-owners_02.png) */}
-          <div className="mt-2 sm:mt-3 max-w-7xl mx-auto relative z-10">
+          <div className="mt-4 sm:mt-6 max-w-7xl mx-auto relative z-10">
             {/* FIXED: Flexbox added, typo removed */}
             <div className="flex items-center justify-center gap-2.5 mb-3">
               <span className="bg-clay text-white font-bold text-[12px] tracking-widest px-2 py-1 rounded-md uppercase shrink-0">
@@ -74,7 +74,7 @@ export default async function BusinessOwners() {
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="flex items-center justify-center gap-2.5 mb-2 sm:mb-3">
+              <div className="mt-4 sm:mt-6 flex items-center justify-center gap-2.5 mb-2 sm:mb-3">
                 {/* FIXED: Flexbox added, typo removed */}
                 <span className="bg-clay text-white font-bold text-[12px] tracking-widest px-2 py-1 rounded-md uppercase shrink-0">
                   STEP 2
@@ -95,7 +95,7 @@ export default async function BusinessOwners() {
               </p>
             </div>
 
-            <div className="mt-10 text-center max-w-4xl mx-auto">
+            <div className="mt-20 sm:mt-24 text-center max-w-4xl mx-auto">
               <p className="text-lg sm:text-xl font-medium text-espresso/80 text-pretty leading-relaxed">
                 This is matchmaking, not recruiting. Every recruitment shop
                 sends you resumes and makes YOU do the matching. That's why your

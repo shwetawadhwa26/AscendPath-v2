@@ -25,13 +25,13 @@ export default async function SalesReps() {
 
   return (
     <div className="bg-bone min-h-screen font-sans relative pb-20 sm:pb-0 selection:bg-clay selection:text-bone">
-      <Navbar />
+      {/* <Navbar /> */}
 
-      <main className="pt-24 pb-0 sm:pt-24">
+      <main className="pt-24 pb-0 sm:pt-16">
         {/* 1. HERO SECTION */}
         <section className="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
           <p className="text-sm font-bold text-clay tracking-widest uppercase mb-4">
-            You don't need another course. You need a job.
+            For sales reps with 6 months of experience or more.
           </p>
           <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-espresso leading-tight text-balance">
             Closers and setters: get placed in a $5K+/month role in 14 days,
@@ -46,7 +46,7 @@ export default async function SalesReps() {
           </p>
         
           {/* VSL added */}
-          <div className="mt-2 sm:mt-3 max-w-7xl mx-auto relative z-10">
+          <div className="mt-4 sm:mt-6 max-w-7xl mx-auto relative z-10">
             {/* FIXED: Flexbox added, typo removed */}
             <div className="flex items-center justify-center gap-2.5 mb-3">
                 <span className="bg-clay text-white font-bold text-[12px] tracking-widest px-2 py-1 rounded-md uppercase shrink-0">
@@ -58,7 +58,7 @@ export default async function SalesReps() {
             </div>
             
             {/* VSL Player */}
-            <div className="max-w-3xl mx-auto rounded-2xl bg-bone p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10 mb-2 sm:mb-6">
+            <div className="max-w-3xl mx-auto rounded-2xl bg-bone p-2 ring-1 ring-espresso/10 lg:p-4 shadow-2xl shadow-black/10 mb-3 sm:mb-6">
               <VSLProvider>
                 <VSLPlayer
                   videoType="REPS"
@@ -68,7 +68,7 @@ export default async function SalesReps() {
             </div>
 
             {/* Short Cards with MS-10 Door Buttons */}
-            <div className="flex flex-col items-center">
+            <div className="mt-4 sm:mt-6 flex flex-col items-center">
               {/* FIXED: Flexbox added, typo removed */}
               <div className="flex items-center justify-center gap-2.5 mb-2 sm:mb-3">
                 <span className="bg-clay text-white font-bold text-[12px] tracking-widest px-2 py-1 rounded-md uppercase shrink-0">

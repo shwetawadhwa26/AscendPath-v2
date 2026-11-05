@@ -22,7 +22,7 @@ export default async function Home() {
   return (
     <div className="bg-bone min-h-screen font-sans relative pb-20 sm:pb-0 selection:bg-clay selection:text-bone">
       <Navbar />
-      {/* <VSLProvider> */}
+      {/* <VSLProvider> */}6
       <main className="pt-24 pb-0 sm:pt-24">
         <Hero />
         {/* <StorySection /> */}
