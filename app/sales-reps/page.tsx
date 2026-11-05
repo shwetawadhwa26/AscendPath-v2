@@ -27,7 +27,7 @@ export default async function SalesReps() {
     <div className="bg-bone min-h-screen font-sans relative pb-20 sm:pb-0 selection:bg-clay selection:text-bone">
       {/* <Navbar /> */}
 
-      <main className="pt-24 pb-0 sm:pt-16">
+      <main className="pt-12 pb-0 sm:pt-12">
         {/* 1. HERO SECTION */}
         <section className="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
           <p className="text-sm font-bold text-clay tracking-widest uppercase mb-4">

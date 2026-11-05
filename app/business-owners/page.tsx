@@ -34,7 +34,7 @@ export default async function BusinessOwners() {
       {/* 2. Inject the Secondary Pixel safely */}
       <SecondaryMetaPixel pixelId="2153489921908781" />
 
-      <main className="pt-24 pb-0 sm:pt-16">
+      <main className="pt-12 pb-0 sm:pt-12">
         {/* 1. HERO SECTION (business-owners_01.png) */}
         <section className="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
             <p className="text-sm font-bold tracking-widest text-clay uppercase mb-4">
