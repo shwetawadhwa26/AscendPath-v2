@@ -106,7 +106,7 @@ export default async function BusinessOwners() {
         </section>
 
         {/* 5. FORM & APPLICATION (business-owners_06.png) */}
-        <section id="audit" className="mt-16 sm:mt-16 bg-bone">
+        <section className="mt-16 sm:mt-16 bg-bone">
           <div className="text-center max-w-7xl mx-auto px-3 lg:px-4">
             <div className="grid lg:grid-cols-1 gap-16">
               {/* Left Column: Form Intro & DQ Note */}
@@ -139,9 +139,9 @@ export default async function BusinessOwners() {
             </div>
           </div>
           {/* Right Column: Aura Form Component */}
-          <div className="w-full mt-4 sm:mt-8 relative z-20">
+          <section id="audit" className="w-full mt-4 sm:mt-8 relative z-20">
             <ApplyBusinessOwners />
-          </div>
+          </section>
         </section>
 
         {/* 3. THE MATCH METHOD (business-owners_03.png & business-owners_04.png) */}

@@ -94,7 +94,7 @@ export default async function SalesReps() {
 
         {/* 5. FORM & STRAIGHT TALK */}
         {/* FIXED: Mobile padding changed from px-3 to px-6 for better breathing room */}
-        <section id="apply" className="mt-20 sm:mt-24 bg-bone">
+        <section className="mt-20 sm:mt-24 bg-bone">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid lg:grid-cols-1 gap-12 sm:gap-16">
               
@@ -115,9 +115,9 @@ export default async function SalesReps() {
               </div>
 
               {/* Right Column: Aura Form Component */}
-              <div className="w-full relative z-20">
+              <section id="apply" className="w-full relative z-20">
                 <ApplySalesReps />
-              </div>
+              </section>
 
             </div>
           </div>
